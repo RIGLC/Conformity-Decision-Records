@@ -1,37 +1,37 @@
 # CDR Cybersecurity, Lauren Challis
 
-## B1: CIS Controls
+## B1: CIS Controls uitgewerkt in beleidstukken
 
 *M1: Passend niveau van cybersecurity en consistentie | Grondslag: Art. 15.1*  
 
 **Context and Problem Statement**
 
-Hansken verwerkt gevoelige forensische data en is geclassificeerd als hoog-risico AI-systeem. Om te bepalen welke beveiligingsmaatregelen noodzakelijk zijn, moet een systematische risicoanalyse worden uitgevoerd. Vraag: welk framework wordt gehanteerd om cybersecurityrisico's integraal te beoordelen en de consistentie van beveiligingsconfiguraties in de loop van de tijd te waarborgen?  
+Er was veel informatie over initiatieven rondom de cybersecurity van Hansken, maar het was niet gestructureerd en gecentraliseerd, en daarom kon compliance met cybersecurity standaarden niet bewezen worden. Daarom moet er een beleidstructuur komen om hier richting aan te geven, dit heet ook wel een ISMS (Information, security management system). Toekomstdroom is gecertificeerd te worden voor de ISO70001. 
 
 **Considered options**  
-* CIS Controls
-* Optie B
-* Optie C
+* CIS controls en bijbehorende beleidsstukken opzetten
 
 **Decision outcome**  
-Chosen option: B1: CIS Controls, omdat de cybersecurityrisico's zijn beoordeeld door deze te mappen op de CIS Controls. De mapping is uitgevoerd maar nog niet formeel getoetst (zie Openstaande acties, punt 1).  
+Chosen option: B1: CIS Controls, er zijn 18 beleidsstukken opgezet, dus een per CIS control. Deze staan op Confluence (link). CIS en NIST zijn veel gehanteerde standaard manieren binnen de overheid en min JenV om cybersecurity in te regelen. In het beleid van CIS zit NIST verwerkt. 
 
 **Consequences**
-* Good, because: *nog niet gedocumenteerd*
-* Bad, because: *nog niet gedocumenteerd*
+* Good, because: er is structuur, er staat een basis voor de informatiebeveiliging, je geeft mensen handvaten, maar creeert ook een stok om mee te slaan. Je kan ook compliance aantonen. 
+* Bad, because: het is bureaucratischer, meer papierwerk. Gemiddelde developer wordt niet blij van het lezen van 18 beleidsstukken. Developers moeten nu ook extra securitytaken oppakken die meer tijd kosten. In sum, het is veiliger, maar het werkt vanuit de developers oogpunt niet lekkerder.  
 
 ## B2: Externe pentesten
 
 *M1: Passend niveau van cybersecurity en consistentie · M4: Bescherming adversariele aanvallen | Grondslag: Art. 15.1, 15.5*
+Er is een pentest beleid opgesteld door het IT-security team, dit staat in nummer 18 van de CIS-control beleidsstukken. 
 
-Software-applicaties kunnen kwetsbaarheden bevatten die niet via interne code-analyse worden gevonden. Vraag: door wie en hoe vaak wordt het systeem extern getest op kwetsbaarheden?
+*Context and problem statement*
+Het is JenV beleid en volgens de BIO moet er bij grote releases een pentest uitgevoerd worden. Pentesten worden uitgevoerd om vertrouwen bij de partners te krijgen, en om het eigen systeem te controleren. Daarnaast wordt de pentest extern uitgevoerd omdat dit ervoor zorgt dat een bias naar het eigen systeem voorkomen wordt, en dat er een nieuwe en frisse blik op de werking van het systeem komt. 
 
-* Periodieke externe pentests, uitgevoerd bij grote wijzigingen of jaarlijks. Bevindingen gaan naar de proceseigenaar/systeemeigenaar. Er is beleid over termijnen waarbinnen geconstateerde kwetsbaarheden worden verholpen.
+* Periodieke externe pentests, uitgevoerd bij grote wijzigingen of 1x per jaar, of op verzoek (bijv. van externen). Bevindingen gaan naar de proceseigenaar/systeemeigenaar. Er is beleid over termijnen waarbinnen geconstateerde kwetsbaarheden worden verholpen.
 
-Chosen option: "B2: Externe pentests als primaire aanvalssimulatie", omdat er pentests worden uitgevoerd door een externe partij. Bevindingen worden gecategoriseerd en binnen vastgestelde termijnen opgevolgd.
+Chosen option: "B2: Externe pentests als primaire aanvalssimulatie", omdat er pentests worden uitgevoerd door een externe partij. Bevindingen worden gecategoriseerd en binnen vastgestelde termijnen opgevolgd. De teamlead doet de uitvraag naar een externe partij om een pentest te doen, deze externe partijen zijn o.a. Sopra Steria. De overheid biedt zelf ook pentesten aan (NAAM), maar deze duurt een stuk langer en is wel gedetailleerder dan de meeste commerciele pentesten. Overheidspentesten worden nu gedaan wanneer de software geacredditeerd moet worden voor intern gebruik. Overheidspentesten duren een stuk langer voordat er iemand langs kan komen. Het IT-security team kijkt na of de teamlead deze uitvraag heeft gedaan, en zijn betrokken vanaf begin tot einde (van intake, tot het gecentraliseerd opslaan van het eindrapport van de pentest). IT-security team zorgen er ook voor de findings uit het rapport worden opgevolgd binnen een bepaalde tijd, hier is het IT-security team de controlerende factor. 
 
-* Good, because: *niet gedocumenteerd — nader in te vullen*
-* Bad, because: *niet gedocumenteerd — nader in te vullen*
+* Good, because: je hebt een externe check, dus je voorkomt bias. Pentest-auditors zijn gespecialiseerd in hun vak, meer dan een willekeurige developer. En het dient als een bewijs naar buiten toe dat je cybersecurity serieus neemt. Het toont aan dat je als organisatie niet alleen vertrouwt op eigen kunde, maar ook een externe mee laat kijken om eventuele blinde vlekken te detecteren. 
+* Bad, because: in het ergste geval zou een pentest ervoor kunnen zorgen dat het systeem uit de lucht gaat voor een korte periode. Maar over het algemeen gebeurd het in een gecontroleerde omgeving, en is die kans hier op minimaal. Risico kan zijn dat de externe partij die de pentest uitvoert het niet goed doet, en belangrijke fouten over het hoofd ziet. 
 
 ---
 
