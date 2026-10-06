@@ -23,12 +23,14 @@ Chosen option: B1: CIS Controls, er zijn 18 beleidsstukken opgezet, dus een per 
 *M1: Passend niveau van cybersecurity en consistentie · M4: Bescherming adversariele aanvallen | Grondslag: Art. 15.1, 15.5*
 Er is een pentest beleid opgesteld door het IT-security team, dit staat in nummer 18 van de CIS-control beleidsstukken. 
 
-*Context and problem statement*
+**Context and problem statement**
 Het is JenV beleid en volgens de BIO moet er bij grote releases een pentest uitgevoerd worden. Pentesten worden uitgevoerd om vertrouwen bij de partners te krijgen, en om het eigen systeem te controleren. Daarnaast wordt de pentest extern uitgevoerd omdat dit ervoor zorgt dat een bias naar het eigen systeem voorkomen wordt, en dat er een nieuwe en frisse blik op de werking van het systeem komt. 
 
+**Considered options**  
 * Periodieke externe pentests, uitgevoerd bij grote wijzigingen of 1x per jaar, of op verzoek (bijv. van externen). Bevindingen gaan naar de proceseigenaar/systeemeigenaar. Er is beleid over termijnen waarbinnen geconstateerde kwetsbaarheden worden verholpen.
 
-Chosen option: "B2: Externe pentests als primaire aanvalssimulatie", omdat er pentests worden uitgevoerd door een externe partij. Bevindingen worden gecategoriseerd en binnen vastgestelde termijnen opgevolgd. De teamlead doet de uitvraag naar een externe partij om een pentest te doen, deze externe partijen zijn o.a. Sopra Steria. De overheid biedt zelf ook pentesten aan (NAAM), maar deze duurt een stuk langer en is wel gedetailleerder dan de meeste commerciele pentesten. Overheidspentesten worden nu gedaan wanneer de software geacredditeerd moet worden voor intern gebruik. Overheidspentesten duren een stuk langer voordat er iemand langs kan komen. Het IT-security team kijkt na of de teamlead deze uitvraag heeft gedaan, en zijn betrokken vanaf begin tot einde (van intake, tot het gecentraliseerd opslaan van het eindrapport van de pentest). IT-security team zorgen er ook voor de findings uit het rapport worden opgevolgd binnen een bepaalde tijd, hier is het IT-security team de controlerende factor. 
+**Chosen option:**  
+"B2: Externe pentests als primaire aanvalssimulatie", omdat er pentests worden uitgevoerd door een externe partij. Bevindingen worden gecategoriseerd en binnen vastgestelde termijnen opgevolgd. De teamlead doet de uitvraag naar een externe partij om een pentest te doen, deze externe partijen zijn o.a. Sopra Steria. De overheid biedt zelf ook pentesten aan (NAAM), maar deze duurt een stuk langer en is wel gedetailleerder dan de meeste commerciele pentesten. Overheidspentesten worden nu gedaan wanneer de software geacredditeerd moet worden voor intern gebruik. Overheidspentesten duren een stuk langer voordat er iemand langs kan komen. Het IT-security team kijkt na of de teamlead deze uitvraag heeft gedaan, en zijn betrokken vanaf begin tot einde (van intake, tot het gecentraliseerd opslaan van het eindrapport van de pentest). IT-security team zorgen er ook voor de findings uit het rapport worden opgevolgd binnen een bepaalde tijd, hier is het IT-security team de controlerende factor. 
 
 * Good, because: je hebt een externe check, dus je voorkomt bias. Pentest-auditors zijn gespecialiseerd in hun vak, meer dan een willekeurige developer. En het dient als een bewijs naar buiten toe dat je cybersecurity serieus neemt. Het toont aan dat je als organisatie niet alleen vertrouwt op eigen kunde, maar ook een externe mee laat kijken om eventuele blinde vlekken te detecteren. 
 * Bad, because: in het ergste geval zou een pentest ervoor kunnen zorgen dat het systeem uit de lucht gaat voor een korte periode. Maar over het algemeen gebeurd het in een gecontroleerde omgeving, en is die kans hier op minimaal. Risico kan zijn dat de externe partij die de pentest uitvoert het niet goed doet, en belangrijke fouten over het hoofd ziet. 
@@ -44,7 +46,7 @@ Er was weinig tot geen inzicht in de huidige kwetsbaarheden, omdat Kubernetes ni
 
 **CDR checken met Marijn van Wijngaarden of Nathan Tuinstra (ontwikkelt de CVE-scanning) van HDH.**
 
-**Alternatieven**
+**Considered options**
 * Zie lijst met overwegingen rondom CVE-scanning - bij Nathan opvragen
 
 **Chosen option:**   
@@ -58,12 +60,12 @@ Er was weinig tot geen inzicht in de huidige kwetsbaarheden, omdat Kubernetes ni
 ## B4: OWASP dependency scan
 
 *M1: Passend niveau van cybersecurity en consistentie · M10: Bescherming side-channel aanvallen | Grondslag: Art. 15.1, 15.5*
-**context and problem statement**
+**Context and problem statement**
 Er kunnen kwetsbaarheden optreden in de dependencies die gebruikt worden in de code. Deze kwetsbaarheden moeten opgespoord worden. 
 
 Naast CVE-scanning worden ook kwetsbaarheden in de applicatie-afhankelijkheden systematisch in kaart gebracht. 
 
-**Alternatieven**
+**Considered options**
 * OWASP dependency scan, uitgevoerd naast CVE-scanning.
 
 **Chosen option:**   
@@ -83,11 +85,12 @@ Het is een soort CVE-scannning, maar het ziet toe op de dependencies die gebruik
 **Context and problem statement**
 Software kan kwetsbaar worden als je code slecht geschrevenn is. Mogelijke SQL-injecties kunnen zorgen voor het losmaken van sensitieve data. Vierogen principe ondervangt dit, maar blijft mensenwerk, en risico's komen voor. Om de risico's te verminderen is voorkeur voor SAST-tooling, die bekijkt de code en spot kwetsbaarheden. 
 
-**Alternatieven**
+**Considered options**
 * Sonarqube
 * Alternatieven niet gedocumenteerd. 
 
-Chosen option: "B5: Sonarqube. 
+**Chosen option:**  
+"B5: Sonarqube. 
 
 * Good, because: code wordt veiliger, extra handjes om mee te kijken, wordt meteen geupdate op basis van nieuwe kwetsbaarheden, is teveel werk voor mensen. Wordt lokaal gehost. 
 * Bad, because: afhankelijkheid van falen van Sonarqube. Is een commerciele leverancier. 
@@ -101,7 +104,7 @@ Chosen option: "B5: Sonarqube.
 **Context and problemstatement**
 Om de samenstelling van het systeem en de ingezette databronnen transparant te maken, is een register nodig. Een SBOM creeert een lijst waar alle componenten, librariers, modules en dependencies, versies opgenomen worden. 
 
-**Alternatieven**
+**Considered options**
  
 **Chosen option:**  
 Staat op de roadmap
@@ -116,9 +119,12 @@ Staat op de roadmap
 *M2: Bestand tegen ongeoorloofd gebruik en integriteitsschendingen | Grondslag: Art. 15.5*
 
 **Context and problem statement**
-Iets wordt gepushed naar de klant, maar er moet zekerheid zijn dat degene die het opent ook degene is die het had moeten openen. Dus je file wordt beveiligd zodat alleen de persoon naar wie je het stuurt, het kan openen, in plaats van dat het netwerk waar je het naar stuurt het allemaal kan openen. 
+Iets wordt gepushed naar de klant, maar er moet zekerheid zijn dat degene die het opent ook degene is die het had moeten openen. Dus je file wordt beveiligd zodat alleen de persoon naar wie je het stuurt, het kan openen, in plaats van dat het netwerk waar je het naar stuurt het allemaal kan openen.   
 
-Chosen option: Staat op de roadmap
+**Considered options**
+
+**Chosen option:**   
+Staat op de roadmap
 
 * Good, because: *niet gedocumenteerd — nader in te vullen*
 * Bad, because: *niet gedocumenteerd — nader in te vullen*
@@ -132,10 +138,11 @@ Chosen option: Staat op de roadmap
 **Context and problemstatement**   
 Een individuele medewerker kan onbedoeld of opzettelijk kwetsbare wijzigingen doorvoeren. Om dit te voorkomen hanteer je dit principe. Jeroen van der Vegt
 
-**Alternatieven**
+**Considered options**
 * Vierogen: wijzigingen vereisen goedkeuring van meerdere personen, geborgd via Atlassian. Voordat code gepushed kan worden, gaat de code door vier verschillende omgevingen (development, test, acceptatie, productie omgeving). De persoon die hier naar kijkt is een tweede developer. 1 Developer die codeert, 1 developer die het bekijkt. Dan in sprint meetings nog bekeken. 
 
-Chosen option: "B8: Vierogen voor wijzigingsbeheer", het wordt gehanteerd om wijzigingen door meerdere personen te laten controleren. Wijzigingen zijn herleidbaar doordat de ontwikkeling in Atlassian plaatsvindt.
+**Chosen option:**  
+"B8: Vierogen voor wijzigingsbeheer", het wordt gehanteerd om wijzigingen door meerdere personen te laten controleren. Wijzigingen zijn herleidbaar doordat de ontwikkeling in Atlassian plaatsvindt.
 
 * Good, because: fijn om twee personen te hebben die controleren, want mensen maken fouten. Is gewoon een standaard dubbelcheck. 
 * Bad, because: Fouten kunnen altijd alsnog doorglippen. Maar dan heb je als back-up de SAST-tooling.  
@@ -156,7 +163,7 @@ Hier is een onderscheidt tussen het intern gebruik en de software.
 **Software**
 * Opvragen bij Jeroen van der Vegt en Gjalt Reitsma. 
   
-**Alternatieven**
+**Considered options**
 
 **Chosen option:**
 
@@ -172,11 +179,12 @@ Hier is een onderscheidt tussen het intern gebruik en de software.
 **Context and problem statement**
 Om afwijkend of ongeautoriseerd gebruik te detecteren, is monitoring van systeemgebruik nodig. Door audit logging kan je zien wat er gebeurd is mocht er een fout opgetreden zijn in de software. 
 
-**Options*
+**Considered options**
 * Logging van omgevingen zonder koppeling IT-security team.
 * Logging van omgevingen met koppeling IT-security time. 
 
-Chosen option: "B10: Audit logging zonder koppeling IT-security team. Staat op de roadmap om logging van omgevingen met koppeling naar IT-security team. Logging is er wel, maar monitoring voor security nog niet. Het staat op de planning om een SOC in te kopen. 
+**Chosen option:**  
+"B10: Audit logging zonder koppeling IT-security team. Staat op de roadmap om logging van omgevingen met koppeling naar IT-security team. Logging is er wel, maar monitoring voor security nog niet. Het staat op de planning om een SOC in te kopen. 
 
 * Good, because: cyberlogging bestaat. IT-security is bezig met het inregelen van de monitoring van de cyberloggings. 
 * Bad, because: cyberlogging wordt nog niet gemonitord.  
