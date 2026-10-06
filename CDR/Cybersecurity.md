@@ -39,29 +39,40 @@ Chosen option: "B2: Externe pentests als primaire aanvalssimulatie", omdat er pe
 
 *M1: Passend niveau van cybersecurity en consistentie · M2: Bestand tegen ongeoorloofd gebruik en integriteitsschendingen | Grondslag: Art. 15.1, 15.5*
 
-Hansken maakt gebruik van externe software-componenten en bibliotheken. Vraag: hoe wordt Hansken geïnformeerd over nieuw ontdekte kwetsbaarheden in gebruikte componenten?
+**context and problem statement**
+Er was weinig tot geen inzicht in de huidige kwetsbaarheden, omdat Kubernetes niet onder de standaard service valt. Kubernetes is een framework waar alle services op draaien, dat draait op de Openshift cluster, maar wijkt af van de servers die door de IB (intern NFI systeembeheerder) worden beheerd. IB beheerd wel het bouwblok waar Kubernetes op draait (het OpenShift cluster). Voor meer informatie over OpenShift cluster contact opzoeken met IB. Daardoor was er geen zicht op de Kubernetes omgeving. Door gebrek aan inzicht kon niet bijgestuurd worden op hoeveelheid kwetsbaarheden. CVE-scanning op Kubernetes is alleen voor Hansken intern NFI gebruik, op het moment dat de sammenwerkingspartner het zelf gaat hosten wordt geacht dat ze zelf de CVE-scanning doen. 
 
-* Geautomatiseerde CVE-scanning op de software-componenten van Hansken.
+**CDR checken met Marijn van Wijngaarden of Nathan Tuinstra (ontwikkelt de CVE-scanning) van HDH.**
 
-Chosen option: "B3: CVE-scanning voor kwetsbaarheden in componenten", omdat CVE-scanning is ingericht om bekende kwetsbaarheden in gebruikte componenten te detecteren.
+**Alternatieven**
+* Zie lijst met overwegingen rondom CVE-scanning - bij Nathan opvragen
 
-* Good, because: *niet gedocumenteerd — nader in te vullen*
-* Bad, because: *niet gedocumenteerd — nader in te vullen*
+**Chosen option:**   
+"B3: CVE-scanning Trivey. Wordt nu gedeployed, verwachting Q4 2026 gaat het op productie draaien. Trivey is een open-source externe partij. Niet noodzakelijk slechte consequentie, want het wordt lokaal gedraaid, maar er is een afhankelijkheid van een derde partij. Om dit risco af te dekken wordt Trivey lokaal gehost, maar je bent afhankelijk van de updates van de aanbieder van Trivey. 
+
+* Good, because: geeft inzicht in de kwetsbaarheden, waar op aangestuurd kan worden bijvoorbeeld dmv het aannemen van extra FTE. Kan prioriteren door inzicht. Maakt applicatie veel veiliger. 
+* Bad, because: Het kan extra belasting geven op de omgeving, waardoor je meer resources nodig hebt, zoals CPU-kracht, extra RAM, om de omgeving draaiende te houden.
 
 ---
 
 ## B4: OWASP dependency scan
 
 *M1: Passend niveau van cybersecurity en consistentie · M10: Bescherming side-channel aanvallen | Grondslag: Art. 15.1, 15.5*
+**context and problem statement**
+Er kunnen kwetsbaarheden optreden in de dependencies die gebruikt worden in de code. Deze kwetsbaarheden moeten opgespoord worden. 
 
-Naast CVE-scanning worden ook kwetsbaarheden in de applicatie-afhankelijkheden systematisch in kaart gebracht. Vraag: hoe worden kwetsbaarheden in de afhankelijkheden van de applicatie bijgehouden?
+Naast CVE-scanning worden ook kwetsbaarheden in de applicatie-afhankelijkheden systematisch in kaart gebracht. 
 
+**Alternatieven**
 * OWASP dependency scan, uitgevoerd naast CVE-scanning.
 
-Chosen option: "B4: OWASP dependency scan voor applicatie-afhankelijkheden", omdat een OWASP dependency scan is geïmplementeerd als aanvullende maatregel op de CVE-scanning.
+**Chosen option:**   
+"B4: OWASP dependency scan voor applicatie-afhankelijkheden". 
+Het is een soort CVE-scannning, maar het ziet toe op de dependencies die gebruikt worden in de code. Hansken downloadt een keer per dag de database van de National Vulnerability Databse (NVD), daar wordt interne code tegenaan gepushed, om te kijken of er kwetsbaarheden zijn in de gebruikte dependencies. De database van NVD wordt lokaal gedownload (geautomatiseerd via API key van NIST), en op deze lokale server wordt de code vergeleken met de database dependencies.
 
-* Good, because: *niet gedocumenteerd — nader in te vullen*
-* Bad, because: *niet gedocumenteerd — nader in te vullen*
+
+* Good, because: Je dependencies blijven up to date, je bent veiliger, is voor partners fijn om te weten dat we veilige dependencies gebruiken, wat geschreven wordt wordt ook getest. Is een lichte tool. 
+* Bad, because: Afhankelijk van NIST, mocht NIST falen dan zijn we daar afhankelijk van. 
 
 ---
 
@@ -69,33 +80,39 @@ Chosen option: "B4: OWASP dependency scan voor applicatie-afhankelijkheden", omd
 
 *M1: Passend niveau van cybersecurity en consistentie · M4: Bescherming adversariele aanvallen | Grondslag: Art. 15.1, 15.5*
 
-Beveiligingsproblemen kunnen tijdens de ontwikkeling in de broncode worden geïntroduceerd. Vraag: hoe worden beveiligingsproblemen in de broncode vroegtijdig gedetecteerd?
+**Context and problem statement**
+Software kan kwetsbaar worden als je code slecht geschrevenn is. Mogelijke SQL-injecties kunnen zorgen voor het losmaken van sensitieve data. Vierogen principe ondervangt dit, maar blijft mensenwerk, en risico's komen voor. Om de risico's te verminderen is voorkeur voor SAST-tooling, die bekijkt de code en spot kwetsbaarheden. 
 
-* SAST-tooling (Static Application Security Testing), ingezet bij grote wijzigingen of jaarlijks.
+**Alternatieven**
+* Sonarqube
+* Alternatieven niet gedocumenteerd. 
 
-Chosen option: "B5: SAST-tooling voor beveiligingsproblemen in broncode", omdat SAST-tooling is ingericht voor het detecteren van beveiligingsproblemen in de broncode van Hansken.
+Chosen option: "B5: Sonarqube. 
 
-* Good, because: *niet gedocumenteerd — nader in te vullen*
-* Bad, because: *niet gedocumenteerd — nader in te vullen*
+* Good, because: code wordt veiliger, extra handjes om mee te kijken, wordt meteen geupdate op basis van nieuwe kwetsbaarheden, is teveel werk voor mensen. Wordt lokaal gehost. 
+* Bad, because: afhankelijkheid van falen van Sonarqube. Is een commerciele leverancier. 
 
 ---
 
-## B6: SBOM
+## TO DO B6: SBOM
 
 *M2: Bestand tegen ongeoorloofd gebruik en integriteitsschendingen · M3: Voorkomen manipulatie datasets | Grondslag: Art. 15.5 (raakt ook Art. 10.5)*
 
-Om de samenstelling van het systeem en de ingezette databronnen transparant te maken, is een register nodig. Vraag: hoe worden de samenstelling van Hansken en de databronnen in kaart gebracht?
+**Context and problemstatement**
+Om de samenstelling van het systeem en de ingezette databronnen transparant te maken, is een register nodig. 
 
+**Alternatieven**
 * SBOM (Software Bill of Materials) als centraal register, tevens dienend als dataleveranciersregister. Checksumcontroles op binnenkomende data waarborgen de integriteit van databronnen.
-
-Chosen option: "B6: SBOM als dataleveranciersregister en transparantie-instrument", omdat de bronnen van dataverzameling zijn in kaart gebracht via de SBOM, die tevens dient als dataleveranciersregister. De betrouwbaarheid van binnenkomende data wordt gewaarborgd door checksumcontroles.
+ 
+**Chosen option:**  
+"B6: SBOM als dataleveranciersregister en transparantie-instrument", omdat de bronnen van dataverzameling zijn in kaart gebracht via de SBOM, die tevens dient als dataleveranciersregister. De betrouwbaarheid van binnenkomende data wordt gewaarborgd door checksumcontroles. Staat op de roadmap, maar is nog niet besloten voor welke manier gekozen is.
 
 * Good, because: *niet gedocumenteerd — nader in te vullen*
 * Bad, because: *niet gedocumenteerd — nader in te vullen*
 
 ---
 
-## B7: Container-signing
+## TO DO B7: Container-signing
 
 *M2: Bestand tegen ongeoorloofd gebruik en integriteitsschendingen | Grondslag: Art. 15.5*
 
@@ -110,18 +127,20 @@ Chosen option: "B7: Container-signing voor integriteitsborging van uitrol", omda
 
 ---
 
-## B8: Vierogen-/zesogenprincipe
+## B8: Vierogenprincipe
 
 *M2: Bestand tegen ongeoorloofd gebruik en integriteitsschendingen | Grondslag: Art. 15.5*
 
-Een individuele medewerker kan onbedoeld of opzettelijk kwetsbare wijzigingen doorvoeren. Vraag: hoe wordt voorkomen dat een enkele medewerker zonder controle wijzigingen aanbrengt?
+**Context and problemstatement**   
+Een individuele medewerker kan onbedoeld of opzettelijk kwetsbare wijzigingen doorvoeren. Om dit te voorkomen hanteer je dit principe. Jeroen van der Vegt
 
-* Vierogen-/zesogenprincipe: wijzigingen vereisen goedkeuring van meerdere personen, geborgd via Git.
+**Alternatieven**
+* Vierogen: wijzigingen vereisen goedkeuring van meerdere personen, geborgd via Atlassian. Voordat code gepushed kan worden, gaat de code door vier verschillende omgevingen (development, test, acceptatie, productie omgeving). De persoon die hier naar kijkt is een tweede developer. 1 Developer die codeert, 1 developer die het bekijkt. Dan in sprint meetings nog bekeken. 
 
-Chosen option: "B8: Vierogen-/zesogenprincipe voor wijzigingsbeheer", omdat het vierogen- respectievelijk zesogenprincipe wordt gehanteerd om wijzigingen door meerdere personen te laten controleren. Wijzigingen zijn herleidbaar doordat de ontwikkeling in Git plaatsvindt.
+Chosen option: "B8: Vierogen voor wijzigingsbeheer", het wordt gehanteerd om wijzigingen door meerdere personen te laten controleren. Wijzigingen zijn herleidbaar doordat de ontwikkeling in Atlassian plaatsvindt.
 
-* Good, because: *niet gedocumenteerd — nader in te vullen*
-* Bad, because: *niet gedocumenteerd — nader in te vullen*
+* Good, because: fijn om twee personen te hebben die controleren, want mensen maken fouten. Is gewoon een standaard dubbelcheck. 
+* Bad, because: Fouten kunnen altijd alsnog doorglippen. Maar dan heb je als back-up de SAST-tooling.  
 
 ---
 
