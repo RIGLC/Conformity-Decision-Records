@@ -6,7 +6,7 @@
 
 **Context and Problem Statement**
 
-Er was veel informatie over initiatieven rondom de cybersecurity van Hansken, maar het was niet gestructureerd en gecentraliseerd, en daarom kon compliance met cybersecurity standaarden niet bewezen worden. Daarom moet er een beleidstructuur komen om hier richting aan te geven, dit heet ook wel een ISMS (Information, security management system). Toekomstdroom is gecertificeerd te worden voor de ISO70001. 
+Er was veel informatie over initiatieven rondom de cybersecurity van Hansken, maar het was niet gestructureerd en gecentraliseerd, en daarom kon compliance met cybersecurity standaarden niet bewezen worden. Daarom moet er een beleidstructuur komen om hier richting aan te geven, dit heet ook wel een ISMS (Information, security management system). Toekomstdroom is gecertificeerd te worden voor de ISO27001. 
 
 **Considered options**  
 * CIS controls en bijbehorende beleidsstukken opzetten
@@ -42,15 +42,15 @@ Het is JenV beleid en volgens de BIO moet er bij grote releases een pentest uitg
 *M1: Passend niveau van cybersecurity en consistentie · M2: Bestand tegen ongeoorloofd gebruik en integriteitsschendingen | Grondslag: Art. 15.1, 15.5*
 
 **context and problem statement**
-Er was weinig tot geen inzicht in de huidige kwetsbaarheden, omdat Kubernetes niet onder de standaard service valt. Kubernetes is een framework waar alle services op draaien, dat draait op de Openshift cluster, maar wijkt af van de servers die door de IB (intern NFI systeembeheerder) worden beheerd. IB beheerd wel het bouwblok waar Kubernetes op draait (het OpenShift cluster). Voor meer informatie over OpenShift cluster contact opzoeken met IB. Daardoor was er geen zicht op de Kubernetes omgeving. Door gebrek aan inzicht kon niet bijgestuurd worden op hoeveelheid kwetsbaarheden. CVE-scanning op Kubernetes is alleen voor Hansken intern NFI gebruik, op het moment dat de sammenwerkingspartner het zelf gaat hosten wordt geacht dat ze zelf de CVE-scanning doen. 
-
-**CDR checken met Marijn van Wijngaarden of Nathan Tuinstra (ontwikkelt de CVE-scanning) van HDH.**
+Er was weinig tot geen inzicht in de huidige kwetsbaarheden in de containers waar Hansken in gebouwd wordt. Hansken team beheert zelf de Kubernetes platformen op basis van Talos. Binnen dat platform hebben we software runnen voor de CVE-scanning in de containers. Door gebrek aan inzicht kon niet bijgestuurd worden op hoeveelheid kwetsbaarheden. CVE-scanning op de containers wordt door het Hansken teamm uitgevoerd door middel van Trivy. Op het moment dat de samenwerkingspartner het zelf gaat hosten wordt aangemoedigd dat ze zelf de CVE-scanning doen.  
 
 **Considered options**
-* Zie lijst met overwegingen rondom CVE-scanning - bij Nathan opvragen
-
+* Kubescape
+* Trivy
+  
 **Chosen option:**   
-"B3: CVE-scanning Trivey. Wordt nu gedeployed, verwachting Q4 2026 gaat het op productie draaien. Trivey is een open-source externe partij. Niet noodzakelijk slechte consequentie, want het wordt lokaal gedraaid, maar er is een afhankelijkheid van een derde partij. Om dit risco af te dekken wordt Trivey lokaal gehost, maar je bent afhankelijk van de updates van de aanbieder van Trivey. 
+"B3: CVE-scanning Trivy. Trivy is in het huidige dashboard (Grafana) geimplementeerd, daarom gekozen voor Trivy. Wordt nu gedeployed, verwachting Q4 2026 gaat het op productie draaien. Trivy is een open-source externe partij. Niet noodzakelijk slechte consequentie, want het wordt lokaal gedraaid, maar er is een afhankelijkheid van een derde partij. Om dit risco af te dekken wordt Trivy lokaal gehost, maar je bent afhankelijk van de updates van de aanbieder van Trivy. 
+Indien Trivy CVE's met een waarde hoger dan x(8/9) detecteert, dient er geacteerd te worden op het mitigeren van de ontstane CVE's. (**#TODO opstellen van mitigatieproces**). 
 
 * Good, because: geeft inzicht in de kwetsbaarheden, waar op aangestuurd kan worden bijvoorbeeld dmv het aannemen van extra FTE. Kan prioriteren door inzicht. Maakt applicatie veel veiliger. 
 * Bad, because: Het kan extra belasting geven op de omgeving, waardoor je meer resources nodig hebt, zoals CPU-kracht, extra RAM, om de omgeving draaiende te houden.
@@ -83,7 +83,7 @@ Het is een soort CVE-scannning, maar het ziet toe op de dependencies die gebruik
 *M1: Passend niveau van cybersecurity en consistentie · M4: Bescherming adversariele aanvallen | Grondslag: Art. 15.1, 15.5*
 
 **Context and problem statement**
-Software kan kwetsbaar worden als je code slecht geschrevenn is. Mogelijke SQL-injecties kunnen zorgen voor het losmaken van sensitieve data. Vierogen principe ondervangt dit, maar blijft mensenwerk, en risico's komen voor. Om de risico's te verminderen is voorkeur voor SAST-tooling, die bekijkt de code en spot kwetsbaarheden. 
+Software kan kwetsbaar worden als je code slecht geschreven is. Mogelijke SQL-injecties kunnen zorgen voor het losmaken van sensitieve data. Vierogen principe ondervangt dit, maar blijft mensenwerk, en risico's komen voor. Om de risico's te verminderen is voorkeur voor SAST-tooling, die bekijkt de code en spot kwetsbaarheden. 
 
 **Considered options**
 * Sonarqube
@@ -139,10 +139,10 @@ Staat op de roadmap
 Een individuele medewerker kan onbedoeld of opzettelijk kwetsbare wijzigingen doorvoeren. Om dit te voorkomen hanteer je dit principe. Jeroen van der Vegt
 
 **Considered options**
-* Vierogen: wijzigingen vereisen goedkeuring van meerdere personen, geborgd via Atlassian. Voordat code gepushed kan worden, gaat de code door vier verschillende omgevingen (development, test, acceptatie, productie omgeving). De persoon die hier naar kijkt is een tweede developer. 1 Developer die codeert, 1 developer die het bekijkt. Dan in sprint meetings nog bekeken. 
+* Vierogen: wijzigingen vereisen goedkeuring van meerdere personen, geborgd via Git. Voordat code gepushed kan worden, gaat de code door vier verschillende omgevingen (development, test, acceptatie, productie omgeving). De persoon die hier naar kijkt is een tweede developer. 1 Developer die codeert, 1 developer die het bekijkt. Dan in sprint meetings nog bekeken. 
 
 **Chosen option:**  
-"B8: Vierogen voor wijzigingsbeheer", het wordt gehanteerd om wijzigingen door meerdere personen te laten controleren. Wijzigingen zijn herleidbaar doordat de ontwikkeling in Atlassian plaatsvindt.
+"B8: Vierogen voor wijzigingsbeheer", het wordt gehanteerd om wijzigingen door meerdere personen te laten controleren. Wijzigingen zijn herleidbaar doordat de ontwikkeling in Git plaatsvindt.
 
 * Good, because: fijn om twee personen te hebben die controleren, want mensen maken fouten. Is gewoon een standaard dubbelcheck. 
 * Bad, because: Fouten kunnen altijd alsnog doorglippen. Maar dan heb je als back-up de SAST-tooling.  
@@ -150,21 +150,14 @@ Een individuele medewerker kan onbedoeld of opzettelijk kwetsbare wijzigingen do
 ---
 
 ## B9: SSO zonder 2FA
-
 *M2: Bestand tegen ongeoorloofd gebruik en integriteitsschendingen | Grondslag: Art. 15.5*
 
 **Context and Problemstatement**
-Er moet onderscheidt gemaakt worden in wie er toegang heeft tot Hansken, en welke delen van Hansken. 
-Hier is een onderscheidt tussen het intern gebruik en de software. 
-
-**Intern:**
-* SSO met 2FA. Is het JenV-beleid, dit wordt opgevolgd.
-
-**Software**
-* Opvragen bij Jeroen van der Vegt en Gjalt Reitsma. 
+Hansken levert een standaardinstallatie van Keycloak mee. Deze voldoet momenteel niet aan de SSO/2FA standaarden. Dit komt mede omdat partners zelf hun gebruikersbeheer doen, en SSO managen. 
+**#TO DO opties uitzoeken om de default veiliger te maken** Staat op de roadmap. 
   
 **Considered options**
-
+* 
 **Chosen option:**
 
 * Good, because: 
@@ -177,14 +170,12 @@ Hier is een onderscheidt tussen het intern gebruik en de software.
 *M2: Bestand tegen ongeoorloofd gebruik en integriteitsschendingen | Grondslag: Art. 15.5*
 
 **Context and problem statement**
-Om afwijkend of ongeautoriseerd gebruik te detecteren, is monitoring van systeemgebruik nodig. Door audit logging kan je zien wat er gebeurd is mocht er een fout opgetreden zijn in de software. 
+Om afwijkend of ongeautoriseerd gebruik te onderzoeken, is monitoring van systeemgebruik nodig. Door audit logging kan je zien wat er gebeurd is mocht er een fout opgetreden zijn in de software. Dit wordt momenteel vastgelegd in Git, deze houdt een versiebeheer bij, waarbij wijzigingen gecontroleerd worden op integriteit. Integriteit houdt in dat vastgesteld kan worden dat de data niet gemanipuleerd/gecorrumpeerd is door kwaadwillenden/hardware falen.     
 
-**Considered options**
-* Logging van omgevingen zonder koppeling IT-security team.
-* Logging van omgevingen met koppeling IT-security time. 
-
+**Considered options** 
+* Code wordt in Git gelogd
 **Chosen option:**  
-"B10: Audit logging zonder koppeling IT-security team. Staat op de roadmap om logging van omgevingen met koppeling naar IT-security team. Logging is er wel, maar monitoring voor security nog niet. Het staat op de planning om een SOC in te kopen. 
+"B10: Audit logging in Git. I&B/IT-security moet monitoren of de omgeving waar Git draait nog integer is. 
 
 * Good, because: cyberlogging bestaat. IT-security is bezig met het inregelen van de monitoring van de cyberloggings. 
 * Bad, because: cyberlogging wordt nog niet gemonitord.  
