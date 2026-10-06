@@ -99,16 +99,15 @@ Chosen option: "B5: Sonarqube.
 *M2: Bestand tegen ongeoorloofd gebruik en integriteitsschendingen · M3: Voorkomen manipulatie datasets | Grondslag: Art. 15.5 (raakt ook Art. 10.5)*
 
 **Context and problemstatement**
-Om de samenstelling van het systeem en de ingezette databronnen transparant te maken, is een register nodig. 
+Om de samenstelling van het systeem en de ingezette databronnen transparant te maken, is een register nodig. Een SBOM creeert een lijst waar alle componenten, librariers, modules en dependencies, versies opgenomen worden. 
 
 **Alternatieven**
-* SBOM (Software Bill of Materials) als centraal register, tevens dienend als dataleveranciersregister. Checksumcontroles op binnenkomende data waarborgen de integriteit van databronnen.
  
 **Chosen option:**  
-"B6: SBOM als dataleveranciersregister en transparantie-instrument", omdat de bronnen van dataverzameling zijn in kaart gebracht via de SBOM, die tevens dient als dataleveranciersregister. De betrouwbaarheid van binnenkomende data wordt gewaarborgd door checksumcontroles. Staat op de roadmap, maar is nog niet besloten voor welke manier gekozen is.
+Staat op de roadmap
 
-* Good, because: *niet gedocumenteerd — nader in te vullen*
-* Bad, because: *niet gedocumenteerd — nader in te vullen*
+* Good, because: 
+* Bad, because: 
 
 ---
 
@@ -116,11 +115,10 @@ Om de samenstelling van het systeem en de ingezette databronnen transparant te m
 
 *M2: Bestand tegen ongeoorloofd gebruik en integriteitsschendingen | Grondslag: Art. 15.5*
 
-Hansken wordt uitgerold via containers. Vraag: hoe wordt geborgd dat alleen geautoriseerde en ongemanipuleerde containers worden uitgerold?
+**Context and problem statement**
+Iets wordt gepushed naar de klant, maar er moet zekerheid zijn dat degene die het opent ook degene is die het had moeten openen. Dus je file wordt beveiligd zodat alleen de persoon naar wie je het stuurt, het kan openen, in plaats van dat het netwerk waar je het naar stuurt het allemaal kan openen. 
 
-* Container-signing: uitgerolde artefacten worden gesigneerd om de integriteit te waarborgen.
-
-Chosen option: "B7: Container-signing voor integriteitsborging van uitrol", omdat het systeem draait in containers waarbij artefacten worden gesigneerd om de integriteit te waarborgen.
+Chosen option: Staat op de roadmap
 
 * Good, because: *niet gedocumenteerd — nader in te vullen*
 * Bad, because: *niet gedocumenteerd — nader in te vullen*
@@ -148,15 +146,22 @@ Chosen option: "B8: Vierogen voor wijzigingsbeheer", het wordt gehanteerd om wij
 
 *M2: Bestand tegen ongeoorloofd gebruik en integriteitsschendingen | Grondslag: Art. 15.5*
 
-Hansken is toegankelijk voor medewerkers van opsporingsdiensten. Vraag: welk authenticatiemechanisme wordt ingezet voor toegang tot Hansken?
+**Context and Problemstatement**
+Er moet onderscheidt gemaakt worden in wie er toegang heeft tot Hansken, en welke delen van Hansken. 
+Hier is een onderscheidt tussen het intern gebruik en de software. 
 
-* SSO (single sign-on) zonder 2FA.
-* SSO met 2FA (niet geïmplementeerd: binnen Hansken is geen 2FA beschikbaar).
+**Intern:**
+* SSO met 2FA. Is het JenV-beleid, dit wordt opgevolgd.
 
-Chosen option: "B9: SSO zonder 2FA als authenticatiemechanisme", omdat binnen Hansken geen 2FA beschikbaar is; wel staat Hansken SSO toe. Toegang wordt verder beperkt via een access list. Het risico van ontbrekende 2FA wordt bij de eerstvolgende herziening opnieuw beoordeeld.
+**Software**
+* Opvragen bij Jeroen van der Vegt en Gjalt Reitsma. 
+  
+**Alternatieven**
 
-* Good, because: *niet gedocumenteerd — nader in te vullen*
-* Bad, because: *niet gedocumenteerd — nader in te vullen*
+**Chosen option:**
+
+* Good, because: 
+* Bad, because: 
 
 ---
 
@@ -164,18 +169,21 @@ Chosen option: "B9: SSO zonder 2FA als authenticatiemechanisme", omdat binnen Ha
 
 *M2: Bestand tegen ongeoorloofd gebruik en integriteitsschendingen | Grondslag: Art. 15.5*
 
-Om afwijkend of ongeautoriseerd gebruik te detecteren, is monitoring van systeemgebruik nodig. Vraag: hoe wordt het gebruik van Hansken gemonitord?
+**Context and problem statement**
+Om afwijkend of ongeautoriseerd gebruik te detecteren, is monitoring van systeemgebruik nodig. Door audit logging kan je zien wat er gebeurd is mocht er een fout opgetreden zijn in de software. 
 
-* Audit logging zonder real-time alertering. Afwijkend gebruik wordt achteraf gedetecteerd.
+**Options*
+* Logging van omgevingen zonder koppeling IT-security team.
+* Logging van omgevingen met koppeling IT-security time. 
 
-Chosen option: "B10: Audit logging zonder real-time alertering", omdat ongeoorloofd of afwijkend gebruik wordt gedetecteerd via audit logging, waarbij op dit moment nog geen alertering is ingericht.
+Chosen option: "B10: Audit logging zonder koppeling IT-security team. Staat op de roadmap om logging van omgevingen met koppeling naar IT-security team. Logging is er wel, maar monitoring voor security nog niet. Het staat op de planning om een SOC in te kopen. 
 
-* Good, because: *niet gedocumenteerd — nader in te vullen*
-* Bad, because: *niet gedocumenteerd — nader in te vullen*
+* Good, because: cyberlogging bestaat. IT-security is bezig met het inregelen van de monitoring van de cyberloggings. 
+* Bad, because: cyberlogging wordt nog niet gemonitord.  
 
 ---
 
-## B11: Aanpak bescherming tegen data poisoning
+## NIET RELEVANT B11: Aanpak bescherming tegen data poisoning
 
 *M3: Voorkomen manipulatie datasets · M5: Bescherming systeemdefecten AI-systeem zelf | Grondslag: Art. 15.5*
 
@@ -190,7 +198,7 @@ Chosen option: "B11: Aanpak bescherming trainingsdata en model tegen data poison
 
 ---
 
-## B12: Jailbreak-detectie
+## NIET RELEVANT  B12: Jailbreak-detectie
 
 *M8: Bescherming jailbreak-aanvallen | Grondslag: Art. 15.5*
 
@@ -205,7 +213,7 @@ Chosen option: "B12: Jailbreak-detectie op eigen hardware", omdat op eigen hardw
 
 ---
 
-## B13: Social engineering operators
+## NIET RELEVANT B13: Social engineering operators
 
 *M11: Bescherming social engineering | Grondslag: Art. 15.5*
 
