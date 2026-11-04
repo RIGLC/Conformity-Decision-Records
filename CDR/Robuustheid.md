@@ -1,18 +1,8 @@
-## Samenvatting
-
-| Veld | Waarde |
-|---|---|
-| **Versie** | |
-| **Status** | PROPOSED / ACCEPTED / REJECTED |
-| **Laatste aanpasdatum** | XX/XX/XXXX |
-| **Aanpasser** | |
 
 
----
+## Conformity Assistance Records   
 
-## Maatregelen
-
-### Waarschuwingen en proactieve beoordeling
+Deze CDR wordt gedeeltelijk ondervangen door de modelcard. 
 
 **Welke waarschuwingstechnieken zijn geconfigureerd om te activeren wanneer de robuustheid onder een drempelwaarde zakt, en hoe zijn de bijbehorende protocollen voor veilig falen vastgelegd?**
 
@@ -38,8 +28,6 @@ _Vul hier je antwoord in._
 
 ---
 
-### Herstel en redundantie
-
 **Welke automatische mechanismen zijn geïmplementeerd voor systeemherstel na storingen, en hoe is de effectiviteit hiervan getest?**
 
 > Bijv.: bij een kritieke fout herstart het systeem automatisch binnen 60 seconden; bij een aanhoudende storing schakelt het over op een fallback-versie van het model; herstelmechanismen zijn getest in een jaarlijkse failover-oefening waarbij geen dataverlies mocht optreden.
@@ -52,7 +40,7 @@ _Vul hier je antwoord in._
 
 ---
 
-**Welke tools en procedures zijn geïmplementeerd om geo-redundantie, versiebeheer en schaalbaarheid van het systeem te waarborgen, en hoe is de beschikbaarheid bij incidenten geborgd?**
+**Welke tools en procedures zijn geïmplementeerd om geo-redundantie (zie voorbeeld), versiebeheer en schaalbaarheid van het systeem te waarborgen, en hoe is de beschikbaarheid bij incidenten geborgd?**
 
 > Bijv.: het systeem draait op twee servers in geografisch gescheiden datacenters; bij uitval van één server neemt de andere binnen 30 seconden automatisch over; alle modelversies worden bewaard in een Git-repository met terugrolmogelijkheid naar elke vorige stabiele versie.
 
@@ -63,8 +51,6 @@ _Vul hier je antwoord in._
 _Vul hier je antwoord in._
 
 ---
-
-### Systemen die blijven leren
 
 **Voor systemen die blijven leren: hoe wordt gemonitord dat robuustheid, nauwkeurigheid en prestaties niet degraderen naarmate het systeem meer data verwerkt?**
 
@@ -78,7 +64,7 @@ _Vul hier je antwoord in._
 
 ---
 
-**Welke monitoring- en beheersplannen zijn opgesteld om modelafwijking en bias-ophoping bij systemen die blijven leren te detecteren en te mitigeren?**
+**Welke monitoring- en beheersplannen zijn opgesteld om modelafwijking en bias bij systemen die blijven leren te detecteren en te mitigeren?**
 
 > Bijv.: een wekelijkse drift-detectietest vergelijkt de actuele inputdistributie met de trainingsdistributie via de Population Stability Index (PSI); bij PSI > 0,2 wordt een hertraining geïnitieerd; na hertraining wordt een fairness-audit uitgevoerd vóór heringebruikname.
 
