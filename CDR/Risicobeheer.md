@@ -1,16 +1,7 @@
-## Samenvatting
-
-| Veld | Waarde |
-|---|---|
-| **Versie** | |
-| **Status** | PROPOSED / ACCEPTED / REJECTED |
-| **Laatste aanpasdatum** | XX/XX/XXXX |
-| **Aanpasser** | |
 
 
----
-
-## Context en scope
+## Conformity Assistance Records
+Deze CDR wordt op den duur vervangen door een Risicobeheer methode, Mary Tielman is hier kartrekker. Voor verdere uitwerking van huidige risicobeheer methode zie Confluence Risicobeheer. Voor Risicobeheer is ook een workshop georganiseerd, de slides en resultaten hiervan zijn opvraagbaar bij Lauren Challis l.challis@nfi.nl. 
 
 **Hoe is de interne en externe context van de organisatie in kaart gebracht in relatie tot dit AI-systeem, en wie is verantwoordelijk voor het risicobeheersysteem?**
 
@@ -36,9 +27,7 @@ _Vul hier je antwoord in._
 
 ---
 
-## Identificatie en analyse van risico's
-
-**Welke onderdelen van het AI-systeem — actoren, data, modellen, infrastructuur — zijn geïnventariseerd, en hoe zijn de bijbehorende risicobronnen geïdentificeerd?**
+**Welke onderdelen van het AI-systeem (actoren, data, modellen, infrastructuur) zijn geïnventariseerd, en hoe zijn de bijbehorende risicobronnen geïdentificeerd?**
 
 > Bijv.: bij een DNA-vergelijkingssysteem zijn de referentiedatabase, het matchingmodel en de outputinterface geïdentificeerd als risicobronnen; per onderdeel is een risicoregister bijgehouden.
 
@@ -50,7 +39,7 @@ _Vul hier je antwoord in._
 
 ---
 
-**Op welke manier zijn risico's voor kwetsbare groepen — waaronder kinderen en mensen met een beperking — en voor grondrechten expliciet meegenomen in de risicoidentificatie?**
+**Op welke manier zijn risico's voor kwetsbare groepen, waaronder kinderen en mensen met een beperking, en voor grondrechten expliciet meegenomen in de risicoidentificatie?**
 
 > Bijv.: een aparte sessie in het risicoworkshop was gewijd aan grondrechtenrisico's; het risico op discriminatie op basis van etniciteit is beoordeeld aan de hand van de ALTAI-checklist.
 
@@ -74,7 +63,7 @@ _Vul hier je antwoord in._
 
 ---
 
-**Hoe zijn risico's die zich kunnen voordoen ná ingebruikname — zoals modelafwijking, onvoorzien gebruik of veranderende context — meegenomen in de beoordeling?**
+**Hoe zijn risico's die zich kunnen voordoen ná ingebruikname, zoals modelafwijking, onvoorzien gebruik of veranderende context, meegenomen in de beoordeling?**
 
 > Bijv.: scenarioanalyse heeft drie risico's na ingebruikname geïdentificeerd: datadrift door veranderende populatiesamenstelling, gebruik buiten de gedocumenteerde jurisdictie, en verouderde trainingsdata.
 
@@ -85,8 +74,6 @@ _Vul hier je antwoord in._
 _Vul hier je antwoord in._
 
 ---
-
-## Risicobehandeling en maatregelen
 
 **Welke risicobeheersingsopties zijn gedefinieerd en geprioriteerd, en hoe is geborgd dat de gekozen maatregelen proportioneel zijn aan het geïdentificeerde risico?**
 
@@ -110,9 +97,7 @@ _Vul hier je antwoord in._
 
 _Vul hier je antwoord in._
 
----
-
-## Monitoring en effectiviteitsbeoordeling
+--
 
 **Hoe wordt de effectiviteit van de geïmplementeerde risicobeheersmaatregelen doorlopend gemonitord, en wanneer wordt het systeem als niet langer acceptabel beoordeeld?**
 
@@ -126,8 +111,6 @@ _Vul hier je antwoord in._
 
 ---
 
-## Residueel risico
-
 **Welke restrisico's blijven bestaan na implementatie van de beheersmaatregelen, hoe zijn deze beoordeeld als aanvaardbaar, en hoe zijn zij gedocumenteerd?**
 
 > Bijv.: na alle maatregelen blijft een restrisico van 0,3% false positive rate; dit is beoordeeld als aanvaardbaar door de directie op basis van vergelijking met de foutmarge van menselijke experts (0,8%); vastgelegd in het risicoregister versie 3.1.
@@ -140,9 +123,7 @@ _Vul hier je antwoord in._
 
 ---
 
-## Documentatie
-
-**Hoe is het volledige risicobeheerproces gedocumenteerd — inclusief methodologie, besluiten, onderbouwing en restrisico's — zodat dit aantoonbaar is voor toezichthouders en conformiteitsbeoordeling?**
+**Hoe is het volledige risicobeheerproces gedocumenteerd, incl. methodologie, besluiten, onderbouwing en restrisico's, zodat dit aantoonbaar is voor toezichthouders en conformiteitsbeoordeling?**
 
 > Bijv.: het risicodossier bestaat uit: (1) risicobeleidsdocument, (2) risicoregister met kans/impact-matrix, (3) maatregelenplan met implementatiestatus, (4) testrapport, (5) restrisicoverklaring ondertekend door directie. Opgeslagen in het technische documentatiesysteem conform Art. 11.
 
@@ -153,8 +134,6 @@ _Vul hier je antwoord in._
 _Vul hier je antwoord in._
 
 ---
-
-## Periodieke beoordeling
 
 **Hoe is risicoinformatie gecommuniceerd naar relevante interne en externe stakeholders, en op welke frequentie wordt het risicobeheersysteem herzien en geactualiseerd?**
 
