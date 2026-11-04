@@ -1,4 +1,4 @@
-# Werkvoorschrift: Compliance Decision Record (CDR)
+# [under construction] Werkvoorschrift: Compliance Decision Record (CDR)
 
 **Documenttype:** Werkvoorschrift  
 **Versie:** 0.1  
@@ -81,7 +81,7 @@ Chosen option: "[titel gekozen optie]", omdat [korte motivering die aansluit
 * Bad, because [negatief gevolg / restrisico — indien gedocumenteerd]
 ```
 
-## Deel A — Voor de AI Compliance Officer
+## Deel A Voor de AI Compliance Officer
 
 ### A1. Voorbereiding
 
@@ -123,7 +123,7 @@ Na het interview:
 4. Leg vast in de frontmatter wie het document heeft opgesteld en wie het beheert.
 
 
-## Deel B — Voor de thema-eigenaar
+## Deel B Voor de thema-eigenaar
 
 ### B1. Jouw rol
 
