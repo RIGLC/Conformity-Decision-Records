@@ -25,3 +25,5 @@ Chosen option: "{title of option 1}", because {justification. e.g., only option,
 ## Bevestiging conformiteit
 
 ## Openstaande acties + deadline + wanneer CDR updaten? 
+
+Bron: https://github.com/adr/madr
