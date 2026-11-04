@@ -1,4 +1,4 @@
-## Volledigheid technisch dossier — Bijlage IV checklist
+## Bijlage IV checklist
 
 Verifieer per element van Bijlage IV of het aanwezig is in het technisch dossier. Noteer de vindplaats en stel de status in.
 
@@ -16,23 +16,9 @@ Verifieer per element van Bijlage IV of het aanwezig is in het technisch dossier
 
 ---
 
-## Samenvatting
+### Conformity Assistance Records
 
-| Veld | Waarde |
-|---|---|
-| **Versie** | |
-| **Status** | PROPOSED / ACCEPTED / REJECTED |
-| **Laatste aanpasdatum** | XX/XX/XXXX |
-| **Aanpasser** | |
-
-
----
-
-## Maatregelen
-
-### Documentatiestrategie en verantwoordelijkheid
-
-**Hoe is de strategie voor technische documentatie vastgelegd — inclusief mijlpalen, verantwoordelijke partijen per domein en het bijwerkingsproces?**
+**Hoe is de strategie voor technische documentatie vastgelegd, incl. mijlpalen, verantwoordelijke partijen per domein en het bijwerkingsproces?**
 
 > Bijv.: een RACI-matrix toont per documentatiedomein (data, risicobeheer, cybersecurity, menselijk toezicht) wie verantwoordelijk, raadpleegbaar, geïnformeerd en aansprakelijk is; de technisch verantwoordelijke heeft 20% FTE gereserveerd voor documentatiebeheer.
 
@@ -56,7 +42,7 @@ _Vul hier je antwoord in._
 
 ---
 
-**Hoe is de centrale opslagplaats voor technische documentatie ingericht — met versiebeheer, gedifferentieerde toegangsrechten, audittrail, back-ups en redundantie?**
+**Hoe is de centrale opslagplaats voor technische documentatie ingericht, met versiebeheer, gedifferentieerde toegangsrechten, audittrail, back-ups en redundantie?**
 
 > Bijv.: alle technische documentatie is opgeslagen in een DMS met versiebeheer (major.minor.patch-nummering); schrijftoegang is beperkt tot twee documenteigenaren; alle wijzigingen worden vastgelegd in een audittrail; dagelijkse back-ups worden bewaard op een geografisch gescheiden server.
 
@@ -67,8 +53,6 @@ _Vul hier je antwoord in._
 _Vul hier je antwoord in._
 
 ---
-
-### Systeembeschrijving en traceerbaarheid
 
 **Hoe zijn het beoogde doel, de naam, de versie en de relatie tot eerdere versies van het systeem gedocumenteerd, inclusief interoperabiliteit met externe systemen?**
 
@@ -94,11 +78,9 @@ _Vul hier je antwoord in._
 
 ---
 
-### Risico's, toezicht en prestatieparameters
-
 **Hoe zijn voorzienbare onbedoelde uitkomsten, risico's voor grondrechten en non-discriminatie gedocumenteerd, en welke maatregelen voor menselijk toezicht zijn beschreven?**
 
-> Bijv.: de technische documentatie bevat een expliciete sectie over grondrechtenrisico's — waaronder het recht op een eerlijk proces (Art. 47 EU Handvest) en non-discriminatie (Art. 21); per risico is beschreven welke toezichtmaatregel van toepassing is en wie verantwoordelijk is voor de uitvoering.
+> Bijv.: de technische documentatie bevat een expliciete sectie over grondrechtenrisico's, waaronder het recht op een eerlijk proces (Art. 47 EU Handvest) en non-discriminatie (Art. 21); per risico is beschreven welke toezichtmaatregel van toepassing is en wie verantwoordelijk is voor de uitvoering.
 
 `▸ AIV Art. 11.3 · AIV Art. 9.2 · AIV Art. 14.1`
 
@@ -120,8 +102,6 @@ _Vul hier je antwoord in._
 
 ---
 
-### Wijzigingsbeheer gedurende de levenscyclus
-
 **Hoe is geborgd dat alle wijzigingen aan het AI-systeem na ingebruikstelling worden vastgelegd, beoordeeld op conformiteitsimpact en verwerkt in de technische documentatie?**
 
 > Bijv.: elke modelupdate doorloopt een change request-procedure; de documentatieverantwoordelijke beoordeelt of de wijziging een nieuwe conformiteitsbeoordeling vereist; alle wijzigingen worden bijgehouden in een wijzigingsregister met datum, omschrijving en goedkeurende functionaris.
@@ -133,8 +113,6 @@ _Vul hier je antwoord in._
 _Vul hier je antwoord in._
 
 ---
-
-### Normen en conformiteitsverklaring
 
 **Welke geharmoniseerde normen of technische specificaties zijn toegepast op dit systeem, en hoe is vastgelegd dat aan de eisen van elk van deze normen is voldaan?**
 
@@ -160,9 +138,7 @@ _Vul hier je antwoord in._
 
 ---
 
-### Archivering en langetermijnbewaring
-
-**Hoe is de bewaring van technische documentatie, QMS-documentatie en conformiteitsverklaringen voor ten minste 10 jaar geborgd — inclusief toegankelijkheid voor toezichthouders en continuïteit bij opheffing?**
+**Hoe is de bewaring van technische documentatie, QMS-documentatie en conformiteitsverklaringen voor ten minste 10 jaar geborgd, incl. toegankelijkheid voor toezichthouders en continuïteit bij opheffing?**
 
 > Bijv.: de documentatie wordt bewaard in een gecertificeerd archiefsysteem conform NEN 2082; een jaarlijkse archiefcontrole verifieert toegankelijkheid en integriteit; bij opheffing van het NFI is een bewaarsprotocol overeengekomen met de Rijksdienst voor het Cultureel Erfgoed.
 
