@@ -1,4 +1,4 @@
-## Maatregelen
+## Conformity Assistance Records
 
 **Hoe zijn de cybersecurityrisico's van dit AI-systeem beoordeeld, inclusief risico's die specifiek zijn voor AI zoals modelmanipulatie en data poisoning. Welke normen of frameworks zijn hierbij gehanteerd?**
 
