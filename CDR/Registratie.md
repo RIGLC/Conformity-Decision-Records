@@ -1,18 +1,5 @@
-## Samenvatting
 
-| Veld | Waarde |
-|---|---|
-| **Versie** | |
-| **Status** | PROPOSED / ACCEPTED / REJECTED |
-| **Laatste aanpasdatum** | XX/XX/XXXX |
-| **Aanpasser** | |
-
-
----
-
-## Maatregelen
-
-### Registratievereisten en doelstellingen
+## Conformity Assistance Records
 
 **Welke informatie dient te worden vastgelegd om naleving van de AI-verordening aantoonbaar te maken, en hoe zijn de doelstellingen en reikwijdte van de registraties gedocumenteerd?**
 
@@ -25,8 +12,6 @@
 _Vul hier je antwoord in._
 
 ---
-
-### Bewaartermijnen en regelgevingsvereisten
 
 **Welke bewaar- en verwijderingstermijnen zijn vastgesteld voor de registraties, en hoe zijn deze afgestemd op de AI-verordening, de AVG en eventuele sectorspecifieke regelgeving?**
 
@@ -52,9 +37,7 @@ _Vul hier je antwoord in._
 
 ---
 
-### Implementatie en opleiding
-
-**Hoe is het registratievastleggingsproces geïmplementeerd en gevalideerd — inclusief stresstests, opslagbeveiliging en toegangscontroles?**
+**Hoe is het registratievastleggingsproces geïmplementeerd en gevalideerd, incl. stresstests, opslagbeveiliging en toegangscontroles?**
 
 > Bijv.: het logsysteem is getest met een load van 10.000 gelijktijdige verwerkingen zonder dataverlies; logs worden versleuteld opgeslagen in een S3-bucket met automatische backup naar een secundair datacenter; alleen de compliance officer en twee systeembeheerders hebben leestoegang tot de logs.
 
@@ -89,8 +72,6 @@ _Vul hier je antwoord in._
 _Vul hier je antwoord in._
 
 ---
-
-### Monitoring en continue verbetering
 
 **Hoe is het proces voor monitoring en continue verbetering van het registratiemanagementsysteem ingericht, en hoe wordt geborgd dat de technische documentatie actueel, volledig en correct blijft?**
 
