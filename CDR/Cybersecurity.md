@@ -1,19 +1,6 @@
-## Samenvatting
-
-| Veld | Waarde |
-|---|---|
-| **Versie** | |
-| **Status** | PROPOSED / ACCEPTED / REJECTED |
-| **Laatste aanpasdatum** | |
-| **Aanpasser** | |
-
----
-
 ## Maatregelen
 
-### Nauwkeurigheid
-
-**Hoe zijn de cybersecurityrisico's van dit AI-systeem integraal beoordeeld — inclusief risico's die specifiek zijn voor AI zoals modelmanipulatie en data poisoning — en welke normen of frameworks zijn hierbij gehanteerd?**
+**Hoe zijn de cybersecurityrisico's van dit AI-systeem beoordeeld, inclusief risico's die specifiek zijn voor AI zoals modelmanipulatie en data poisoning. Welke normen of frameworks zijn hierbij gehanteerd?**
 
 > Bijv.: een penetratietest is uitgevoerd door een externe partij conform het PTES-framework; bevindingen zijn gecategoriseerd naar ernst (kritiek, hoog, middel, laag); alle kritieke bevindingen zijn binnen 30 dagen verholpen en gedocumenteerd in het securitydossier.
 
@@ -25,7 +12,7 @@ _Vul hier je antwoord in._
 
 ---
 
-**Welke beveiligingsmaatregelen zijn getroffen om ongeoorloofde wijzigingen en integriteitsschendingen van het systeem en zijn configuratie te detecteren en te voorkomen?**
+  **Welke beveiligingsmaatregelen zijn getroffen om ongeoorloofde wijzigingen en integriteitsschendingen van het systeem en de configuratie van het systeem te detecteren en te voorkomen?**
 
 > Bijv.: een integrity check vergelijkt modelgewichten dagelijks met de cryptografische hash van de goedgekeurde versie; elke configuratiewijziging vereist goedkeuring van twee beheerders; afwijkingen triggeren automatisch een beveiligingsalert aan de CISO.
 
@@ -36,8 +23,6 @@ _Vul hier je antwoord in._
 _Vul hier je antwoord in._
 
 ---
-
-### Ongeoorloofd gebruik en datamanipulatie
 
 **Welke mechanismen zijn ingebouwd om ongeoorloofd of afwijkend gebruik van het systeem te detecteren en te voorkomen, en hoe zijn integriteitscontroles opgezet?**
 
@@ -51,7 +36,7 @@ _Vul hier je antwoord in._
 
 ---
 
-**Hoe zijn de trainingsdata en het model beschermd tegen data poisoning en manipulatie — inclusief toegangscontroles, versleuteling, anomaliedetectie en logging?**
+**Hoe zijn de trainingsdata en het model beschermd tegen data poisoning en manipulatie, incl. toegangscontroles, versleuteling, anomaliedetectie en logging?**
 
 > Bijv.: toegang tot de trainingsdata vereist twee-factor-authenticatie en is beperkt tot drie data-engineers; data is versleuteld opgeslagen (AES-256); een anomaliedetectiesysteem signaleert ongebruikelijke wijzigingspatronen; alle wijzigingen worden gelogd in een audittrail.
 
@@ -74,8 +59,6 @@ _Vul hier je antwoord in._
 _Vul hier je antwoord in._
 
 ---
-
-### Aanvalsbescherming
 
 **Hoe is het systeem getest en gehardend tegen adversariële aanvallen, en welke detectie- en mitigatiemechanismen zijn ingebouwd om manipulatie van invoer te signaleren?**
 
@@ -101,7 +84,7 @@ _Vul hier je antwoord in._
 
 ---
 
-**Welke mechanismen zijn geïmplementeerd om ontwijkingsaanvallen te detecteren — pogingen om via aangepaste invoer de AI-beslissing te omzeilen — en hoe effectief zijn deze gebleken?**
+**Welke mechanismen zijn geïmplementeerd om ontwijkingsaanvallen te detecteren, zoals pogingen om via aangepaste invoer de AI-beslissing te omzeilen, en hoe effectief zijn deze? Hoe is dit getest?**
 
 > Bijv.: het systeem vergelijkt elk inkomend datapunt met een statistische baseline; afwijkingen boven een drempelwaarde worden geblokkeerd en gelogd; in de afgelopen zes maanden zijn vier echte ontwijkingspogingen gedetecteerd en tegengehouden.
 
@@ -113,7 +96,7 @@ _Vul hier je antwoord in._
 
 ---
 
-**Welke maatregelen zijn ontwikkeld om jailbreaking te voorkomen — pogingen om beperkingen of veiligheidsmechanismen van het systeem te omzeilen — en hoe is de effectiviteit hiervan getest?**
+**Welke maatregelen zijn ontwikkeld om jailbreaking te voorkomen, bijv. pogingen om beperkingen of veiligheidsmechanismen van het systeem te omzeilen, en hoe effectief zijn deze? Hoe is dit getest?**
 
 > Bijv.: het systeem heeft een inputvalidatielaag die bekende jailbreak-patronen filtert; verificatiemechanismen controleren bij elke aanroep of de output binnen de gedefinieerde veiligheidsgrenzen valt; effectiviteit is getest via red-teaming oefeningen.
 
@@ -124,8 +107,6 @@ _Vul hier je antwoord in._
 _Vul hier je antwoord in._
 
 ---
-
-### Privacy-aanvallen en side-channel risico's
 
 **Is beoordeeld of het systeem zelf specifieke cybersecurityrisico's introduceert, en hoe zijn inversieaanvallen en modeldiefstal voorkomen via maskering, versleuteling of componentscheiding?**
 
@@ -139,7 +120,7 @@ _Vul hier je antwoord in._
 
 ---
 
-**In hoeverre is het systeem kwetsbaar voor membership inference-aanvallen — waarbij een aanvaller probeert te achterhalen of een specifiek datapunt in de trainingsset zat — en welke privacybeschermingstechnieken zijn toegepast?**
+**In hoeverre is het systeem kwetsbaar voor membership inference-aanvallen, bijv. waarbij een aanvaller probeert te achterhalen of een specifiek datapunt in de trainingsset zat, en welke mitigerende maatregelen zijn hiervoor toegepast?**
 
 > Bijv.: een membership inference attack test toonde aan dat het model met 53% kans (near-random, dus acceptabel) kon voorspellen of een datapunt in de trainingsset zat; ter aanvullende bescherming is differential privacy toegepast met ε = 1,0 bij de modeltraining.
 
@@ -151,7 +132,7 @@ _Vul hier je antwoord in._
 
 ---
 
-**Zijn de functies, tools en externe bibliotheken die het systeem gebruikt geanalyseerd op side-channel kwetsbaarheden, en hoe zijn deze beheersmatig of technisch gemitigeerd?**
+**Zijn de functies, tools en externe bibliotheken die het systeem gebruikt geanalyseerd op side-channel kwetsbaarheden, en hoe zijn deze gemitigeerd?**
 
 > Bijv.: een inventaris van alle externe bibliotheken toont welke onbeheerde of verouderde componenten risico's introduceren; kwetsbare bibliotheken zijn vervangen of geïsoleerd; timing-side-channels zijn gemitigeerd door constante-tijd implementaties te gebruiken.
 
@@ -163,9 +144,7 @@ _Vul hier je antwoord in._
 
 ---
 
-### Social engineering en incidentrespons
-
-**Is beoordeeld of het systeem kwetsbaar is voor social engineering — pogingen om via misleiding van menselijke operators ongeautoriseerde acties te bewerkstelligen — en welke maatregelen zijn getroffen?**
+**Is beoordeeld of het systeem kwetsbaar is voor social engineering, bijv. pogingen om via misleiding van menselijke operators ongeautoriseerde acties te bewerkstelligen, en welke mitigerende maatregelen zijn hiervoor toegepast?**
 
 > Bijv.: operators zijn getraind om verdachte verzoeken via het systeem te herkennen; het systeem vraagt altijd een tweede autorisatie bij acties buiten de normale workflow; een communicatieprotocol beschrijft welke verzoeken nooit via automatische berichten worden gedaan.
 
@@ -177,7 +156,7 @@ _Vul hier je antwoord in._
 
 ---
 
-**Hoe is veilige en betrouwbare communicatie gewaarborgd tussen het systeem en zijn gebruikers, beheerders en externe systemen — inclusief encryptie, authenticatie en integriteitscontrole van berichten?**
+**Hoe is veilige en betrouwbare communicatie gewaarborgd tussen het systeem en zijn gebruikers, beheerders en externe systemen, incl. encryptie, authenticatie en integriteitscontrole van berichten?**
 
 > Bijv.: alle communicatie verloopt via TLS 1.3; API-aanroepen worden geauthenticeerd via OAuth 2.0 met korte tokenlevensduur (15 minuten); de integriteit van berichten wordt gewaarborgd via HMAC-signing.
 
