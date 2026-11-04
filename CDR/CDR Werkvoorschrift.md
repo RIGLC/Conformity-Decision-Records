@@ -14,6 +14,7 @@ Per thema (bijv. cybersecurity, databeheer, menselijk toezicht) bestaat één CA
 
 De CDR is **geen eenmalig product**: het is een levend document dat wordt bijgehouden zolang het AI-systeem in gebruik is.
 
+**Toevoegen over Conformity Assistance Records! En dat de voorbeelden per vraag van de CAR op basis van GenAI zijn geformuleerd**
 
 ## 2. Wanneer maak je een CDR?
 
