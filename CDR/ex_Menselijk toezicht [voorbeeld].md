@@ -5,7 +5,7 @@
 | **status** | gedeeltelijk |
 | **date** | 2026-09-15 |
 | **end responsible** | Yolanda |
-| **consulted** | Mary Tielman (AI Compliance Officer) |
+| **consulted** | Mohammed (AI Compliance Officer) |
 | **rechtsgrondslag** | Art. 14.1 t/m 14.5 AI-verordening |
 | **bewijsstukken** | ONTBREEKT, links toe te voegen |
 | **herzieningsmoment** | Jaarlijks of eerder bij significante wijziging in het systeem of de werkinstructies |
