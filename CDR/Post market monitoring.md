@@ -1,20 +1,6 @@
-## Samenvatting
+## Conformity Assistance Records
 
-| Veld | Waarde |
-|---|---|
-| **Versie** | |
-| **Status** | PROPOSED / ACCEPTED / REJECTED |
-| **Laatste aanpasdatum** | XX/XX/XXXX |
-| **Aanpasser** | |
-
-
----
-
-## Maatregelen
-
-### Post-market monitoringsysteem
-
-**Hoe is het post-market monitoringsysteem ontworpen in relatie tot de geïdentificeerde risico's — welke specifieke indicatoren adresseren elk risico, en hoe is het ontwerp gevalideerd?**
+**Hoe is het post-market monitoringsysteem ontworpen in relatie tot de geïdentificeerde risico's, welke specifieke indicatoren adresseren elk risico, en hoe is het ontwerp gevalideerd?**
 
 > Bijv.: het monitoringplan bevat voor elk risico uit de risicoanalyse een bijbehorende indicator; het risico 'prestatieverlies bij nieuwe populatie' wordt gemonitord via wekelijkse drift-detectie op een representatieve steekproef van 100 actuele zaken.
 
@@ -26,9 +12,7 @@ _Vul hier je antwoord in._
 
 ---
 
-### Proactieve monitoring
-
-**Welke kernindicatoren zijn gedefinieerd voor het bewaken van het systeem — AI-prestaties, infrastructuur, gebruik door analisten — en hoe zijn de acceptabele waardebereiken bepaald en onderbouwd?**
+**Welke kernindicatoren zijn gedefinieerd voor het bewaken van het systeem, AI-prestaties, infrastructuur, gebruik door analisten, en hoe zijn de acceptabele waardebereiken bepaald en onderbouwd?**
 
 > Bijv.: de kernindicatoren zijn: precisie (>97%), recall (>95%), verwerkingstijd (<5 sec), systeembeschikbaarheid (>99,5%) en aantal analist-overrides per maand (<5%); de drempelwaarden zijn bepaald op basis van de eerste zes maanden productiedata en gevalideerd door domeinexperts.
 
@@ -76,8 +60,6 @@ _Vul hier je antwoord in._
 
 ---
 
-### Dataverzameling monitoring
-
 **Hoe is het beleid voor continue en periodieke monitoring formeel vastgelegd, inclusief rollen, frequenties en de procedure voor het bijwerken van het monitoringsplan?**
 
 > Bijv.: monitoringbeleid is vastgelegd in procedure 'AI-06 Monitoring'; continue bewaking vindt dagelijks geautomatiseerd plaats; periodieke review vindt maandelijks plaats door de producteigenaar; jaarlijks evalueert de directie het monitoringbeleid.
@@ -102,7 +84,7 @@ _Vul hier je antwoord in._
 
 ---
 
-**Hoe zijn medewerkers opgeleid voor het uitvoeren en beoordelen van monitoring, en hoe worden responsoefeningen ingezet om de effectiviteit van het systeem te testen?**
+**Hoe zijn medewerkers opgeleid voor het uitvoeren en beoordelen van monitoring, en worden er oefeningen ingezet om de effectiviteit van het systeem te testen? Zo ja, hoe?**
 
 > Bijv.: medewerkers die verantwoordelijk zijn voor monitoring volgen jaarlijks een verplichte training van drie uur; elk kwartaal vindt een tabletop-oefening plaats waarbij een fictief incident wordt doorlopen; deelname en uitkomst worden vastgelegd in het trainingsregister.
 
