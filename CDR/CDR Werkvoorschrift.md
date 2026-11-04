@@ -14,7 +14,13 @@ Per thema (bijv. cybersecurity, databeheer, menselijk toezicht) bestaat één CA
 
 De CDR is **geen eenmalig product**: het is een levend document dat wordt bijgehouden zolang het AI-systeem in gebruik is.
 
-**Toevoegen over Conformity Assistance Records! En dat de voorbeelden per vraag van de CAR op basis van GenAI zijn geformuleerd**
+Het invullen van CDR's verloopt in twee fasen. In welke fase je begint, hangt af van de volwassenheid van de organisatie op het gebied van AI-compliance.
+
+**Fase 1: nulpunt opstellen met Conformity Assistance Records (CAR).** Een organisatie die nog geen volledig overzicht heeft, begint met het opstellen van een nulpunt. Daarvoor gebruik je de Conformity Assistance Records. Per thema bevat een CAR alle vragen die je moet beantwoorden om een goed overzicht te krijgen van hoe compliant een AI-systeem op dit moment is op basis van de AI-verordening. Bij elke vraag staan de relevante artikelen en een voorbeeldantwoord. Het nulpunt is compleet wanneer alle vragen zijn beantwoord en het oordeel is vastgelegd.
+
+**Fase 2: bijhouden met Compliance Decision Records.** Staat het nulpunt, dan houd je de documentatie actueel met CDR's. Per beslissing voeg je een update aan het document toe. Daarin beschrijf je welke beslissing is genomen en onder welk thema deze valt, volgens de structuur in §5.
+
+**Let op bij de voorbeelden in de CAR.** De voorbeeldantwoorden bij de vragen in de CAR zijn opgesteld met behulp van generatieve AI. Het is daardoor mogelijk dat ze fouten bevatten, bijvoorbeeld in artikelverwijzingen, termijnen of genoemde instanties. Gebruik de voorbeelden alleen als illustratie van het soort antwoord dat wordt verwacht, en controleer ze altijd aan de wettekst.
 
 ## 2. Wanneer maak je een CDR?
 
@@ -30,6 +36,8 @@ Een bestaande CDR wordt herzien wanneer (zie ook deel B, §6):
 - er nieuwe pentest-bevindingen of post-market monitoring feedback is,
 - de jaarlijkse herzieningsdatum bereikt is, of
 - de toezichthouder om aanvullende documentatie verzoekt.
+
+<img width="904" height="450" alt="image" src="https://github.com/user-attachments/assets/d1a98b8f-aac9-418b-a347-cd14b3561585" />
 
 
 ## 3. Naamgeving en opslag
