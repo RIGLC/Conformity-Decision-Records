@@ -1,4 +1,4 @@
-# [under construction] Werkvoorschrift: Compliance Decision Record (CDR)
+# Werkvoorschrift: Compliance Decision Record (CDR)
 
 **Documenttype:** Werkvoorschrift  
 **Versie:** 0.1  
@@ -89,7 +89,7 @@ Doe het volgende voordat je het interview ingaat:
 
 1. Bepaal het AI-systeem en het thema (welk AIV-artikel).
 2. Zoek de relevante maatregelenlijst op (bijv. M1–M11 voor Art. 15 cybersecurity).
-3. Raadpleeg de **invulinstructie** van het betreffende thema. De invulinstructie bevat de interviewvragen per maatregel en is een apart werkdocument — het maakt geen onderdeel uit van de CA zelf.
+3. Raadpleeg de **invulinstructie** van het betreffende thema. De invulinstructie bevat de interviewvragen per maatregel en is een apart werkdocument, het maakt geen onderdeel uit van de CA zelf.
 4. Stel vast wie de thema-eigenaar is (degene met de technische kennis van het thema).
 
 ### A2. Het interview
@@ -168,7 +168,7 @@ De status wordt vastgesteld door de AI Compliance Officer op basis van de bevest
 
 ### B6. Jaarlijkse herziening
 
-Ieder jaar controleert de thema-eigenaar — samen met de AI Compliance Officer — of de CDR nog actueel is. Agenda-items voor de jaarlijkse herziening:
+Ieder jaar controleert de thema-eigenaar, samen met de AI Compliance Officer, of de CDR nog actueel is. Agenda-items voor de jaarlijkse herziening:
 
 - Zijn alle openstaande acties afgehandeld?
 - Zijn er nieuwe kwetsbaarheden of incidenten geweest?
