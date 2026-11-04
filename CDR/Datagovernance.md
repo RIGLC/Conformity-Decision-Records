@@ -1,25 +1,7 @@
-## Samenvatting
+## Conformity Assistance Records   
+Deze CDR wordt waarschijnlijk vervangen door de datasheets. Wachten nog op afhankelijkheden. 
 
-| Veld | Waarde |
-|---|---|
-| **Versie** | |
-| **Status** | PROPOSED / ACCEPTED / REJECTED |
-| **Laatste aanpasdatum** | XX/XX/XXXX |
-| **Aanpasser** | |
-
----
-
-## Maatregelen
-
-### AIV Art. 10.2.a — Ontwerpkeuzes
-
-**1. Welke informatie is noodzakelijk voor de ontwikkeling en gebruik van dit systeem?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**a. Is deze informatie gedocumenteerd?**
+**1. Welke informatie is noodzakelijk voor de ontwikkeling en gebruik van dit systeem? En is deze informatie gedocumenteerd?**
 
 **Antwoord:**
 
@@ -35,15 +17,7 @@ _Vul hier je antwoord in._
 
 ---
 
-### AIV Art. 10.2.b — Dataverzameling
-
-**2. Wat is de bron/zijn de bronnen van de data?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**a. Hoe is deze data verzameld?**
+**2. Wat is de bron/zijn de bronnen van de data? En hoe is deze data verzameld?**
 
 **Antwoord:**
 
@@ -52,12 +26,6 @@ _Vul hier je antwoord in._
 ---
 
 **3. Zitten er persoonsgegevens of bijzondere persoonsgegevens in de data?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**a. Worden er bijzondere persoonsgegevens verwerkt op enig punt in de levenscyclus van het AI-model?**
 
 **Antwoord:**
 
@@ -93,8 +61,6 @@ _Vul hier je antwoord in._
 
 ---
 
-### AIV Art. 10.2.c — Datavoorbereiding
-
 **6. Hoeveel dimensies heeft de dataset?**
 
 **Antwoord:**
@@ -119,25 +85,7 @@ _Vul hier je antwoord in._
 
 _Vul hier je antwoord in._
 
-**d. Zijn er verbeteringen op de data doorgevoerd op basis van de kwaliteitscontroles?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**e. Zo ja, hoe?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**f. Waar zijn deze resultaten gerapporteerd?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**g. Wat betekent dit voor de geschiktheid van de dataset?**
+**d. Zijn er verbeteringen op de data doorgevoerd op basis van de kwaliteitscontroles? Zo ja, hoe? En heeft dit invloed op de geschiktheid van de dataset?**
 
 **Antwoord:**
 
@@ -199,15 +147,7 @@ _Vul hier je antwoord in._
 
 ---
 
-### AIV Art. 10.2.d — Aannames
-
 **13. Als de data wordt overgedragen in de laatste fase van de datalevenscyclus, wordt er dan een rapport opgeleverd met alle details rondom deze data-overdracht?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**a. Waar wordt dit rapport opgeslagen?**
 
 **Antwoord:**
 
@@ -215,7 +155,6 @@ _Vul hier je antwoord in._
 
 ---
 
-### AIV Art. 10.2.e — Benodigde data
 
 **14. Is er geverifieerd dat de data na gebruik wordt verwijderd?**
 
@@ -253,21 +192,8 @@ _Vul hier je antwoord in._
 
 _Vul hier je antwoord in._
 
-**f. Is er gerapporteerd over alle details rondom het dataverwijderingsproces?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**g. Waar wordt dit rapport opgeslagen?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
 
 ---
-
-### AIV Art. 10.2.f — Vooringenomenheid (bias) en AIV Art. 10.2.g — Maatregelen tegen vooringenomenheid (biasmitigatie)
 
 **15. Is er een risico op bias gezien de bron van de data?**
 
@@ -303,7 +229,6 @@ _Vul hier je antwoord in._
 
 ---
 
-### AIV Art. 10.2.h — Tekortkomingen
 
 **17. Zijn er nog databehoeftes die in de dataset ontbreken waardoor de kwaliteit van de data onvoldoende is voor bovenstaande eisen?**
 
@@ -311,11 +236,6 @@ _Vul hier je antwoord in._
 
 _Vul hier je antwoord in._
 
-**a. Zo ja, hoe worden deze behoeftes opgelost?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
 
 ---
 
