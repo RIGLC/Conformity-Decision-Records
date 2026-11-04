@@ -1,18 +1,4 @@
-## Samenvatting
-
-| Veld | Waarde |
-|---|---|
-| **Versie** | |
-| **Status** | PROPOSED / ACCEPTED / REJECTED |
-| **Laatste aanpasdatum** | XX/XX/XXXX |
-| **Aanpasser** | |
-
-
----
-
-## Maatregelen
-
-### Contactgegevens aanbieder
+### Conformity Assistance Records
 
 **Via welk kanaal kunnen deployers en gebruikers verzoeken, klachten en incidenten melden, en wie is het aangewezen contactpunt bij de aanbieder?**
 
@@ -25,8 +11,6 @@
 _Vul hier je antwoord in._
 
 ---
-
-### Transparantie-eisen
 
 **Hoe is de functionele reikwijdte van het systeem gedocumenteerd en gecommuniceerd, inclusief voorzienbare situaties van verkeerd gebruik en de bijbehorende risicomaatregelen?**
 
@@ -52,9 +36,7 @@ _Vul hier je antwoord in._
 
 ---
 
-### Instructies voor gebruik
-
-**Hoe zijn de databronnen en de redenering van het systeem inzichtelijk gemaakt — zowel op globaal niveau als op het niveau van individuele beslissingen?**
+**Hoe zijn de databronnen en de redenering van het systeem inzichtelijk gemaakt, zowel op globaal niveau als op het niveau van individuele beslissingen?**
 
 > Bijv.: een analist kan via een 'Verklaring'-knop zien welke kenmerken het meest hebben bijgedragen aan de matchingscore (SHAP-waarden); op globaal niveau is een modeldocument beschikbaar met de topkenmerken en hun gewichten.
 
@@ -78,7 +60,7 @@ _Vul hier je antwoord in._
 
 ---
 
-**Hoe is de uitleg van het systeem aangepast aan het kennisniveau van de beoogde gebruiker — inclusief niet-technische eindgebruikers en toezichthouders?**
+**Hoe is de uitleg van het systeem aangepast aan het kennisniveau van de beoogde gebruiker, incl. niet-technische eindgebruikers en toezichthouders?**
 
 > Bijv.: gebruikerstests met drie rechters toonden aan dat de numerieke probabiliteit (0,97) verkeerd werd geïnterpreteerd; uitkomsten worden nu weergegeven als 'hoge, middelhoge of lage overeenkomst' met een begeleidende toelichting in begrijpelijke taal.
 
@@ -101,8 +83,6 @@ _Vul hier je antwoord in._
 _Vul hier je antwoord in._
 
 ---
-
-### Kenmerken en beperkingen
 
 **Welke prestatiestatistieken zijn gedefinieerd en gedocumenteerd voor data, model en operationele werking, en hoe worden deze doorlopend gemonitord?**
 
@@ -127,8 +107,6 @@ _Vul hier je antwoord in._
 _Vul hier je antwoord in._
 
 ---
-
-### Veranderingen
 
 **Beschrijf de gebruiksinstructies die aan de deployer worden verstrekt: welke informatie bevat deze, in welke taal en vorm, en hoe is geborgd dat ze begrijpelijk en actueel zijn?**
 
