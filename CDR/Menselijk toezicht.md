@@ -1,20 +1,8 @@
-## Samenvatting
-
-| Veld | Waarde |
-|---|---|
-| **Versie** | |
-| **Status** | PROPOSED / ACCEPTED / REJECTED |
-| **Laatste aanpasdatum** | XX/XX/XXXX |
-| **Aanpasser** | |
 
 
----
+## Conformity Assistance Records
 
-## Maatregelen
-
-### Ontwerp en ontwikkeling toezicht
-
-**Hoe is menselijk toezicht technisch ingebed in het systeem — zijn toezichthouders in staat om de werking te begrijpen, te monitoren, te onderbreken en te corrigeren?**
+**Hoe is menselijk toezicht technisch ingebed in het systeem? Zijn toezichthouders in staat om de werking te begrijpen, te monitoren, te onderbreken en te corrigeren?**
 
 > Bijv.: de forensisch expert ontvangt de AI-uitkomst met een zekerheidspercentage en een lijst van de drie meest bepalende kenmerken. Via een 'Verwerp'-knop kan hij de conclusie negeren vóórdat deze in een rapportage terechtkomt; het systeem blokkeert automatische doorstroom totdat de analist expliciet akkoord heeft gegeven.
 
@@ -38,7 +26,7 @@ _Vul hier je antwoord in._
 
 ---
 
-**Via welke interfaces kunnen verantwoordelijken de kernfuncties van het systeem beheren en bewaken — denk aan het instellen van drempelwaarden, het inzien van prestatiemetrieken, het bekijken van logs en het activeren van noodstops?**
+**Via welke interfaces kunnen verantwoordelijken de kernfuncties van het systeem beheren en bewaken, denk aan het instellen van drempelwaarden, het inzien van prestatiemetrieken, het bekijken van logs en het activeren van noodstops?**
 
 > Bijv.: een beheerdashboard toont realtime welke zaken het systeem verwerkt, welke drempelwaarden zijn ingesteld, en geeft een oranje waarschuwing als de nauwkeurigheid drie dagen onder de 95% zakt. Beheerders kunnen via hetzelfde scherm de drempelwaarde aanpassen of de verwerking tijdelijk pauzeren — zonder tussenkomst van IT.
 
@@ -50,9 +38,7 @@ _Vul hier je antwoord in._
 
 ---
 
-### Toezichtvereisten
-
-**Hoe is het governance-model voor menselijk toezicht ingericht gedurende de gehele operationele levenscyclus — inclusief rollen, bevoegdheden, escalatiepaden en, indien van toepassing, specifieke vereisten voor biometrische identificatie op afstand?**
+**Hoe is het governance-model voor menselijk toezicht ingericht gedurende de gehele operationele levenscyclus, incl. rollen, bevoegdheden, escalatiepaden en, indien van toepassing, specifieke vereisten voor biometrische identificatie op afstand?**
 
 > Bijv.: een escalatiematrix beschrijft dat bij twijfel over een AI-uitkomst de forensisch expert zijn teamleider inschakelt; de teamleider heeft de bevoegdheid om de verwerking voor een gehele zaakcategorie te stoppen; bij biometrische identificatie op afstand valideert altijd een tweede gecertificeerde expert de uitkomst conform art. 14.5.
 
@@ -63,8 +49,6 @@ _Vul hier je antwoord in._
 _Vul hier je antwoord in._
 
 ---
-
-### Governance en procedures
 
 **In welke mate is een 'human in the loop' of 'human on the loop' principe geïmplementeerd, en hoe zijn geautomatiseerde functies ingezet om ongewenste autonome beslissingen en automatiseringstendens te voorkomen?**
 
@@ -90,9 +74,7 @@ _Vul hier je antwoord in._
 
 ---
 
-### Technische toezichtmaatregelen
-
-**Hoe zijn toezichthouders opgeleid om de outputs van het systeem te interpreteren, beperkingen te herkennen en tijdig in te grijpen — en hoe wordt de competentie hiervoor op peil gehouden?**
+**Hoe zijn toezichthouders opgeleid om de outputs van het systeem te interpreteren, beperkingen te herkennen en tijdig in te grijpen, en hoe wordt de competentie hiervoor op peil gehouden?**
 
 > Bijv.: nieuwe analisten volgen een verplichte e-learning van vier uur over automatiseringstendens en de interpretatie van AI-outputs vóór ze met het systeem mogen werken; jaarlijks vindt een opfriscertificering van twee uur plaats; deelname en resultaat worden geregistreerd in het HR-systeem.
 
