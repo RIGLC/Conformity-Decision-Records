@@ -1,18 +1,7 @@
-## Samenvatting
-
-| Veld | Waarde |
-|---|---|
-| **Versie** | |
-| **Status** | PROPOSED / ACCEPTED / REJECTED |
-| **Laatste aanpasdatum** | XX/XX/XXXX |
-| **Aanpasser** | |
 
 
----
-
-## Maatregelen
-
-### Doelstellingen en meetwaarden
+## Conformity Assistance Records
+Deze CAR wordt waarschijnlijk vervangen door de modelcard. 
 
 **Welke nauwkeurigheidseisen en prestatiedoelstellingen zijn vastgesteld voor dit systeem, uitgedrukt in meetbare statistieken, en hoe zijn deze afgeleid uit het beoogde gebruik en de risicoanalyse?**
 
@@ -34,8 +23,6 @@ _Vul hier je antwoord in._
 `▸ AIV Art. 15.1`
 `▸ Zie modelcard (feature importance)`
 
-> ⚠️ _Swart, Milena de — kan jij dit dubbelchecken voor mij welke dingen uit de CDR nauwkeurigheid al in de modelcard staan?_
-
 **Antwoord:**
 
 _Vul hier je antwoord in._
@@ -53,8 +40,6 @@ _Vul hier je antwoord in._
 _Vul hier je antwoord in._
 
 ---
-
-### Validatie en testomgevingen
 
 **Hoe is geborgd dat de validatie- en testomgevingen de productieomgeving nauwkeurig repliceren, inclusief hardware-equivalentie, en hoe worden eventuele afwijkingen gedocumenteerd?**
 
@@ -87,15 +72,11 @@ _Vul hier je antwoord in._
 `▸ AIV Art. 15.1`
 `▸ Zie modelcard (performance van het model)`
 
-> ⚠️ _Swart, Milena de — hier ook alsjeblieft_
-
 **Antwoord:**
 
 _Vul hier je antwoord in._
 
 ---
-
-### Monitoring en capaciteit
 
 **Hoe worden degradatie in nauwkeurigheid gedurende de operationele fase gedetecteerd en gerapporteerd, en welke waarschuwings- en herstelprotocollen zijn ingericht?**
 
