@@ -1,250 +1,149 @@
-## Conformity Assistance Records   
-Deze CDR wordt waarschijnlijk vervangen door de datasheets. Wachten nog op afhankelijkheden. 
+# Datasheet
 
-**1. Welke informatie is noodzakelijk voor de ontwikkeling en gebruik van dit systeem? En is deze informatie gedocumenteerd?**
+### 1. Wat is de herkomst van de dataset en wat is de juridische grondslag voor het gebruik ervan?
+
+Bijv.: de dataset bestaat uit 50.000 geanonimiseerde zaken van 2010–2023; herkomst is vastgelegd in een data-lineagedocument; juridische grondslag is 'uitvoering van een taak van algemeen belang' conform AVG art. 6(1)(e).
+
+`▸ Art. 10.2 · Art. 10.3`
 
 **Antwoord:**
-
-_Vul hier je antwoord in._
 
 ---
 
-**2. Is er informatie rondom de data en metadata die nodig is om het begrip van de data en het correcte gebruik in de ontwikkeling van het AI-systeem te faciliteren, gedocumenteerd?**
+### 2. Is de dataset representatief voor de beoogde populatie en het beoogde gebruik, en welke aannames zijn daarbij gemaakt?
+
+Bijv.: een representativiteitsanalyse toonde aan dat de leeftijdsverdeling in de dataset overeenkomt met de Nederlandse bevolkingsopbouw (±3%); de aanname dat de dataset toekomstige casussen dekt is expliciet gedocumenteerd als risico.
+
+`▸ Art. 10.2 · Art. 10.3`
 
 **Antwoord:**
-
-_Vul hier je antwoord in._
 
 ---
 
-**2. Wat is de bron/zijn de bronnen van de data? En hoe is deze data verzameld?**
+### 3. Wat zijn de eigenschappen van de dataset?
 
-**Antwoord:**
+Bijv.: 133.533 gelabelde afbeeldingen; data type: afbeeldingen (JPEG); verzameld in Nederland in de periode 2015–2023; geografische reikwijdte: Nederland; gelabeld in 17 forensisch relevante categorieën.
 
-_Vul hier je antwoord in._
+`▸ Art. 10.2`
 
----
-
-**3. Zitten er persoonsgegevens of bijzondere persoonsgegevens in de data?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
----
-
-**4. Is de data waar nodig geanonimiseerd of gepseudonimiseerd?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**a. Is er geïnformeerd of gerapporteerd over veiligheids- en privacybeschermingsmaatregelen op het gebied van anonimisering die zijn uitgevoerd?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**b. Is er geïnformeerd over veiligheids- en privacybeschermingsmaatregelen op het gebied van pseudonimisering die zijn uitgevoerd?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
----
-
-**5. Is er gekeken naar mogelijk misbruik en redelijk voorzienbaar gebruik van de beschikbare data?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
----
-
-**6. Hoeveel dimensies heeft de dataset?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**a. Welke controles moeten er uitgevoerd worden op de kwaliteit van deze dimensies?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**b. Wat zijn de resultaten van deze controles?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**c. Zijn er afwijkingen gedetecteerd in de benodigde kwaliteit?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**d. Zijn er verbeteringen op de data doorgevoerd op basis van de kwaliteitscontroles? Zo ja, hoe? En heeft dit invloed op de geschiktheid van de dataset?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
----
-
-**7. Heeft er transformatie plaatsgevonden op de dataset?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
----
-
-**8. Heeft er aggregatie van data uit verschillende bronnen plaatsgevonden op de dataset?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
----
-
-**9. Heeft er sampling plaatsgevonden, en zo ja, hoe?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
----
-
-**10. Is de dimensionaliteit van de dataset vergroot of verkleind tijdens het proces van datavoorbereiding?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
----
-
-**11. Is de data tijdens het proces van datavoorbereiding verrijkt?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
----
-
-**12. Hoe is de data gelabeld?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**a. Heeft er automatische annotatie plaatsgevonden? Zo ja, wat was het menselijk toezicht hierop?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
----
-
-**13. Als de data wordt overgedragen in de laatste fase van de datalevenscyclus, wordt er dan een rapport opgeleverd met alle details rondom deze data-overdracht?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
----
-
-
-**14. Is er geverifieerd dat de data na gebruik wordt verwijderd?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**a. Is er geverifieerd dat er geen gebruiker of actor is die betrokken is bij de ontwikkeling van het AI-systeem die nog toegang nodig heeft tot de data voor een specifieke reden of toepassing?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**b. Is er geverifieerd dat het proces van dataverwijdering geen wettelijke, contractuele of data-archiveringsverplichtingen breekt?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**c. Is er geverifieerd dat de data zal worden verwijderd van alle plekken waar deze is opgeslagen?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**d. Is er geëvalueerd of er mogelijkheid is tot gedeeltelijk of volledig herstel van de data, van het AI-systeem dat op deze data is getraind?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**e. Is de data gecheckt op culturele, sociale of historische significantie?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-
----
-
-**15. Is er een risico op bias gezien de bron van de data?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**a. Hoe is deze bias beoordeeld? Heeft dit effect op het systeem?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
----
-
-**16. Is er bias geïdentificeerd in de data?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**a. Zo ja, is er een analyse en evaluatie uitgevoerd voor maatregelen hiertegen?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-**b. Zo ja, zijn deze maatregelen geïmplementeerd?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
----
-
-
-**17. Zijn er nog databehoeftes die in de dataset ontbreken waardoor de kwaliteit van de data onvoldoende is voor bovenstaande eisen?**
-
-**Antwoord:**
-
-_Vul hier je antwoord in._
-
-
----
-
-## Beslissing
-
-| Veld | Waarde |
+| Eigenschap | Waarde |
 |---|---|
-| **Oordeel** | ☐ COMPLIANT · ☐ GEDEELTELIJK · ☐ NON-COMPLIANT |
-| **Rationale** | |
-| **Openstaande acties** | |
-| **Beoordelaar** | |
-| **Datum beoordeling** | |
+| Data type | |
+| Grootte (GB) | |
+| Hoeveelheid (instances) | |
+| Datum van verzameling | |
+| Geografische reikwijdte | |
+| Label informatie | |
+| Aantal features / velden | |
+
+**Antwoord / toelichting:**
+
+---
+
+### 4. Welke datakwaliteitsdimensies zijn gedefinieerd en hoe worden kwaliteitscontroles per dimensie uitgevoerd?
+
+Bijv.: kwaliteitsdimensies zijn volledigheid (>99,5%), juistheid (gevalideerd door domeinexperts), consistentie (geen conflicterende records) en actualiteit (data niet ouder dan 5 jaar); elke nieuwe dataset doorloopt een geautomatiseerde kwaliteitscheck vóór gebruik.
+
+`▸ Art. 10.2`
+
+**Antwoord:**
+
+---
+
+### 5. Hoe zijn geconstateerde afwijkingen in datakwaliteit gedocumenteerd en welke verbetermaatregelen zijn getroffen?
+
+Bijv.: bij de kwaliteitscheck zijn 312 records met missende waarden geïdentificeerd; na analyse zijn 280 records verwijderd en 32 aangevuld op basis van domeinexpertise; dit is vastgelegd in het datakwaliteitslogboek.
+
+`▸ Art. 10.2`
+
+**Antwoord:**
+
+---
+
+### 6. Hoe is de data verzameld en op basis van welke selectiecriteria?
+
+Bijv.: de data is verzameld via inbeslagname door het DJIT-team; selectiecriterium is dat het bewijsmateriaal betrekking heeft op een lopende zaak; data met een opnamedatum van vóór 2010 is uitgesloten.
+
+`▸ Art. 10.2`
+
+**Antwoord:**
+
+---
+
+### 7. Welke datatransformaties hebben plaatsgevonden en hoe zijn deze keuzes onderbouwd?
+
+Bijv.: afbeeldingen zijn geresized naar 299×299 pixels voor invoer in het model; JPEG-kwaliteit is genormaliseerd naar 85%; alle transformaties zijn vastgelegd in een reproduceerbaar preprocessing-script met versienummer.
+
+`▸ Art. 10.2`
+
+**Antwoord:**
+
+---
+
+### 8. Hoe is datalabeling uitgevoerd en in welke mate heeft menselijk toezicht plaatsgevonden bij geautomatiseerde annotatie?
+
+Bijv.: 80% van de labels is handmatig aangebracht door gecertificeerde analisten; 20% is automatisch gegenereerd en steekproefsgewijs (5%) gecontroleerd door een senior analist; inter-annotator agreement is gemeten op κ = 0,87.
+
+`▸ Art. 10.2 · Art. 14.1`
+
+**Antwoord:**
+
+---
+
+### 9. Welke bronnen van bias zijn geïdentificeerd in de data en hoe zijn deze geanalyseerd?
+
+Bijv.: een fairness-audit toonde aan dat het model een 8% hogere fout-positiefrate had voor afbeeldingen van vrouwen in de categorie pornography; dit is geanalyseerd als gevolg van onevenwichtige vertegenwoordiging in de trainingsdata.
+
+`▸ Art. 10.2 · Art. 10.4`
+
+**Antwoord:**
+
+---
+
+### 10. Welke mitigatiemaatregelen zijn getroffen om bias te reduceren en hoe is de effectiviteit hiervan gemeten?
+
+Bijv.: als mitigatie zijn gerichte tegenvoorbeelden toegevoegd (foto's van vrouwen zonder pornografische inhoud, factor 1,5 oversampling); na hertraining is de fout-positiefrate gedaald van 8% naar 2,1% voor deze groep; resultaten zijn vastgelegd in het fairness-rapport v2.0.
+
+`▸ Art. 10.2 · Art. 10.4`
+
+**Antwoord:**
+
+---
+
+### 11. Hoe is omgegaan met persoonsgegevens en bijzondere persoonsgegevens, inclusief de AVG-grondslag, toegepaste anonimisering en meldingen aan betrokkenen?
+
+Bijv.: persoonsgegevens zijn gepseudonimiseerd via SHA-256 hashing; de DPIA is goedgekeurd door de Functionaris Gegevensbescherming op 15 maart 2024; betrokkenen zijn geïnformeerd via een privacy notice in het zaakdossier.
+
+`▸ Art. 10.5`
+
+**Antwoord:**
+
+---
+
+### 12. Is het risico op heridentificatie beoordeeld en welke maatregelen zijn hiervoor ingericht?
+
+Bijv.: het risico van heridentificatie via linkage-aanvallen is beoordeeld als 'laag' op basis van een k-anonimiteitsanalyse (k=5); toegang tot ruwe data is beperkt tot twee data-engineers met een geheimhoudingsverklaring.
+
+`▸ Art. 10.5`
+
+**Antwoord:**
+
+---
+
+### 13. Hoe is de toegang tot de dataset ingericht en wie is verantwoordelijk voor toestemmingsbeheer?
+
+Bijv.: de dataset staat op de project-/zakenschijf onder `/data/raw/FIRE/`; toegang vereist een VGB en goedkeuring van de dataseigenaar; bij gebruik voor een nieuw project dient toestemming te worden gevraagd aan de dataseigenaar of, bij afwezigheid, aan het teamhoofd.
+
+`▸ Art. 10.5`
+
+**Antwoord:**
+
+---
+
+### 14. Hoe verloopt de data-overdracht of -verwijdering aan het einde van de levenscyclus?
+
+Bijv.: na het verstrijken van de bewaartermijn (10 jaar) worden data overschreven conform de DoD 5220.22-M standaard; verwijdering wordt gelogd in het auditsysteem met tijdstempel, verantwoordelijke en bevestiging; het effect op afhankelijke modellen is vooraf beoordeeld en vastgelegd.
+
+`▸ Art. 10.5`
+
+**Antwoord:**
